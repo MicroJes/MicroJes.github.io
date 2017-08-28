@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="viewport visual viewport   - 可视区域 window.innerWidth - Height   layout viewport    - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）document.documentElement.clientWidth - Height   ideal viewport  ideal viewport">
+<meta name="description" content="手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。  虚拟窗口（layout viewpor">
 <meta name="keywords" content="viewport">
 <meta property="og:type" content="article">
 <meta property="og:title" content="viewport适口">
 <meta property="og:url" content="http://yoursite.com/2017/04/28/html-view/index.html">
 <meta property="og:site_name" content="web点滴">
-<meta property="og:description" content="viewport visual viewport   - 可视区域 window.innerWidth - Height   layout viewport    - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）document.documentElement.clientWidth - Height   ideal viewport  ideal viewport">
+<meta property="og:description" content="手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。  虚拟窗口（layout viewpor">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-08-28T10:42:24.000Z">
+<meta property="og:updated_time" content="2017-08-28T10:55:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="viewport适口">
-<meta name="twitter:description" content="viewport visual viewport   - 可视区域 window.innerWidth - Height   layout viewport    - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）document.documentElement.clientWidth - Height   ideal viewport  ideal viewport">
+<meta name="twitter:description" content="手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。  虚拟窗口（layout viewpor">
 
 
 
@@ -330,24 +330,33 @@
       
 
       
-        <h1 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h1><ul>
-<li><p>visual viewport</p>
-<h2 id="可视区域"><a href="#可视区域" class="headerlink" title="  - 可视区域 "></a>  - 可视区域 </h2><pre><code>window.innerWidth - Height
-</code></pre><hr>
-</li>
-<li><p>layout viewport </p>
-<h2 id="把-viewport-设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）"><a href="#把-viewport-设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）" class="headerlink" title="  - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）"></a>  - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）</h2><pre><code>document.documentElement.clientWidth - Height
-</code></pre><hr>
-</li>
-<li><p>ideal viewport</p>
-<ul>
-<li>ideal viewport的宽度等于移动设备的屏幕宽度</li>
-<li>针对ideal viewport而设计的网站，不需要用户手动缩放，也不需要出现横向滚动条，都可以完美的呈现给用户。</li>
+        <ul>
+<li>手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕<br>Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。</li>
 </ul>
-</li>
+<h3 id="虚拟窗口（layout-viewport）"><a href="#虚拟窗口（layout-viewport）" class="headerlink" title="虚拟窗口（layout viewport）"></a>虚拟窗口（layout viewport）</h3><ul>
+<li>把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）。该默认的 viewport 称为 layout viewport。<br>宽度可通过 Js 获取(基本所有设备都支持)</li>
 </ul>
-<h2 id="width-device-width"><a href="#width-device-width" class="headerlink" title="width=device-width"></a>width=device-width</h2><ul>
-<li>因为meta viewport中的width能控制layout viewport的宽度，所以我们只需要把width设为width-device这个特殊的值就行了。</li>
+<h3 id="视觉窗口（visual-viewport）"><a href="#视觉窗口（visual-viewport）" class="headerlink" title="视觉窗口（visual viewport）"></a>视觉窗口（visual viewport）</h3><ul>
+<li>浏览器可视区域大小。可理解为手机物理屏幕。<br>宽度可通过 Js 获取(不支持Android2, Opera Mini, UC8)</li>
+</ul>
+<hr>
+<p>window.innerWidth</p>
+<h2 id="window-innerHeight"><a href="#window-innerHeight" class="headerlink" title="window.innerHeight"></a>window.innerHeight</h2><h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
+<li>由Peter-Paul Koch提出的一种概念，一个完美适配移动设备的 viewport。理想状态是不需要用户缩放和横向滚动条就能正常查看，显示的文字大小合适，不区分分辨率，屏幕密度等。</li>
+</ul>
+<hr>
+<h2 id=""><a href="#" class="headerlink" title=""></a><metaname="viewport"content="width=device-width, initial-scale="1.0," maximum-scale="1.0," user-scalable="0""></metaname="viewport"content="width=device-width,></h2><h3 id="meta-viewport"><a href="#meta-viewport" class="headerlink" title="meta viewport"></a>meta viewport</h3><ul>
+<li>移动端默认使用的是 layout viewport ，而我们想要达到类似 ideal viewport 的效果的话，可以通过 meta 标签来对 viewport 进行控制。</li>
+</ul>
+<h3 id="width-device-width"><a href="#width-device-width" class="headerlink" title="width=device-width"></a>width=device-width</h3><ul>
+<li><p>因为meta viewport中的width能控制layout viewport的宽度，所以我们只需要把width设为width-device这个特殊的值就行了。</p>
+</li>
+<li><p>设备像素比 = 设备像素/设备独立像素 </p>
+</li>
+<li><p>设备独立像素 =  设备像素/设备像素比</p>
+</li>
+<li><p>独立设备像素 就是 css 中的px  独立于设备的用于逻辑上衡量像素的单位。</p>
+</li>
 </ul>
 
       
@@ -512,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#viewport"><span class="nav-number">1.</span> <span class="nav-text">viewport</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#可视区域"><span class="nav-number">1.1.</span> <span class="nav-text">  - 可视区域 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把-viewport-设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）"><span class="nav-number">1.2.</span> <span class="nav-text">  - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#width-device-width"><span class="nav-number">1.3.</span> <span class="nav-text">width=device-width</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟窗口（layout-viewport）"><span class="nav-number">1.</span> <span class="nav-text">虚拟窗口（layout viewport）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视觉窗口（visual-viewport）"><span class="nav-number">2.</span> <span class="nav-text">视觉窗口（visual viewport）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#window-innerHeight"><span class="nav-number"></span> <span class="nav-text">window.innerHeight</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ideal-viewport"><span class="nav-number">1.</span> <span class="nav-text">ideal viewport</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#meta-viewport"><span class="nav-number">1.</span> <span class="nav-text">meta viewport</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#width-device-width"><span class="nav-number">2.</span> <span class="nav-text">width=device-width</span></a></li></ol></div>
             
 
           </div>
