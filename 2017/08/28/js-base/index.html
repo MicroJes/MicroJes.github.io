@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="design," />
+  <meta name="keywords" content="js," />
 
 
 
@@ -94,21 +94,18 @@
 
 
 
-<meta name="description" content="移动端设计知识库关键词 px：physical pixel 设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。 css pxCSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。 pt: point，点，印刷行业常用单位，等于1/72英寸 dip 设备独立像素 (DIP，device-indep">
-<meta name="keywords" content="design">
+<meta name="description" content="js对象this 对象 this 指向和调用方式有关 函数调用  对象方法   new表达式   ==普通函数调用==，this为==全局对象或是undefined== ==作为对象的方法==，this为==那个对象== new 表达式，this为以该函数为原型的新创建的对象 使用 apply/call指定 this  这里this的指向根据函数的上下文 用bind绑定固定的this 事件处理函数">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移动端设计知识库">
-<meta property="og:url" content="http://yoursite.com/2017/08/28/design/index.html">
+<meta property="og:title" content="js对象概念">
+<meta property="og:url" content="http://yoursite.com/2017/08/28/js-base/index.html">
 <meta property="og:site_name" content="web点滴">
-<meta property="og:description" content="移动端设计知识库关键词 px：physical pixel 设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。 css pxCSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。 pt: point，点，印刷行业常用单位，等于1/72英寸 dip 设备独立像素 (DIP，device-indep">
+<meta property="og:description" content="js对象this 对象 this 指向和调用方式有关 函数调用  对象方法   new表达式   ==普通函数调用==，this为==全局对象或是undefined== ==作为对象的方法==，this为==那个对象== new 表达式，this为以该函数为原型的新创建的对象 使用 apply/call指定 this  这里this的指向根据函数的上下文 用bind绑定固定的this 事件处理函数">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://p3.ssl.qhimg.com/t0136463ffdc083f527.jpg">
-<meta property="og:image" content="https://p2.ssl.qhimg.com/t01ea8b64b8834a6092.png">
-<meta property="og:updated_time" content="2017-08-28T10:27:24.000Z">
+<meta property="og:updated_time" content="2017-08-28T10:28:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动端设计知识库">
-<meta name="twitter:description" content="移动端设计知识库关键词 px：physical pixel 设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。 css pxCSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。 pt: point，点，印刷行业常用单位，等于1/72英寸 dip 设备独立像素 (DIP，device-indep">
-<meta name="twitter:image" content="https://p3.ssl.qhimg.com/t0136463ffdc083f527.jpg">
+<meta name="twitter:title" content="js对象概念">
+<meta name="twitter:description" content="js对象this 对象 this 指向和调用方式有关 函数调用  对象方法   new表达式   ==普通函数调用==，this为==全局对象或是undefined== ==作为对象的方法==，this为==那个对象== new 表达式，this为以该函数为原型的新创建的对象 使用 apply/call指定 this  这里this的指向根据函数的上下文 用bind绑定固定的this 事件处理函数">
 
 
 
@@ -137,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/28/design/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/28/js-base/"/>
 
 
 
 
 
-  <title>移动端设计知识库 | web点滴</title>
+  <title>js对象概念 | web点滴</title>
   
 
 
@@ -266,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/design/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/js-base/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MicroJes">
@@ -283,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">移动端设计知识库</h1>
+          <h1 class="post-title" itemprop="name headline">js对象概念</h1>
         
 
         <div class="post-meta">
@@ -295,7 +292,7 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:31+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T14:27:33+08:00">
                 2017-08-28
               </time>
             
@@ -333,38 +330,66 @@
       
 
       
-        <h1 id="移动端设计知识库"><a href="#移动端设计知识库" class="headerlink" title="移动端设计知识库"></a>移动端设计知识库</h1><h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><hr>
-<h3 id="px：physical-pixel"><a href="#px：physical-pixel" class="headerlink" title="px：physical pixel"></a>px：physical pixel</h3><blockquote>
-<p>设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。</p>
-<h3 id="css-px"><a href="#css-px" class="headerlink" title="css px"></a>css px</h3><p>CSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。</p>
-<h3 id="pt-point，点，"><a href="#pt-point，点，" class="headerlink" title="pt: point，点，"></a>pt: point，点，</h3><p>印刷行业常用单位，等于1/72英寸</p>
-<h3 id="dip-设备独立像素"><a href="#dip-设备独立像素" class="headerlink" title="dip 设备独立像素"></a>dip 设备独立像素</h3><p> (DIP，device-independent pixel，density-independent pixel)(也叫密度无关像素)，可以认为是计算机坐标系统中得一个点，这个点代表一个可以由程序使用并控制的虚拟像素(比如：CSS 像素,只是在android机中CSS 像素就不叫”CSS 像素”了而是叫”设备独立像素”)， 然后由相关系统转换为物理像素。</p>
-<blockquote>
-<p>dip或dp，是安卓开发用的单位</p>
+        <h1 id="js对象"><a href="#js对象" class="headerlink" title="js对象"></a>js对象</h1><h3 id="this-对象"><a href="#this-对象" class="headerlink" title="this 对象"></a>this 对象</h3><blockquote>
+<p>this 指向和调用方式有关 函数调用  对象方法   new表达式</p>
 </blockquote>
-</blockquote>
-<h2 id="比较单位"><a href="#比较单位" class="headerlink" title="比较单位"></a>比较单位</h2><h3 id="DPI-点每英寸"><a href="#DPI-点每英寸" class="headerlink" title="DPI 点每英寸"></a>DPI 点每英寸</h3><blockquote>
-<p> dpi (dots per inch)： 打印分辨率 （每英寸所能打印的点数，即打印精度）</p>
-<h3 id="PPI-像素每英寸"><a href="#PPI-像素每英寸" class="headerlink" title="PPI 像素每英寸"></a>PPI 像素每英寸</h3><p>ppi (pixels per inch)：图像分辨率 （在图像中，每英寸所包含的像素数目）</p>
-<blockquote>
-<p>  计算方法是通过勾股定理算出来对角线包含的像素点然后除以对角线的长度(英寸)得来的</p>
 <ul>
-<li>ppi和dpi经常都会出现混用现象。但是他们所用的领域也存在区别。从技术角度说，“像素”只存在于电脑显示领域，而“点”只出现于打印或印刷领域。</li>
+<li>==普通函数调用==，this为==全局对象或是undefined==</li>
+<li>==作为对象的方法==，this为==那个对象==</li>
+<li>new 表达式，this为以该函数为原型的新创建的对象</li>
+<li>使用 apply/call指定 this  这里this的指向根据函数的上下文</li>
+<li>用bind绑定固定的this</li>
+<li>事件处理函数中的this是当前的触发事件的DOM元素(event.currentTarget) </li>
+<li><a href="http://zonxin.github.io/post/2015/11/javascript-this" target="_blank" rel="external">IE attachEvent添加的事件处理函数中this为window</a></li>
 </ul>
-</blockquote>
-</blockquote>
-<h2 id="PPI-参数数据"><a href="#PPI-参数数据" class="headerlink" title="PPI 参数数据"></a>PPI 参数数据</h2><h3 id="安卓端-PPI-参数"><a href="#安卓端-PPI-参数" class="headerlink" title="安卓端 PPI 参数"></a>安卓端 PPI 参数</h3><p><img src="https://p3.ssl.qhimg.com/t0136463ffdc083f527.jpg" alt="image"></p>
-<h3 id="苹果设备-PPI-参数"><a href="#苹果设备-PPI-参数" class="headerlink" title="苹果设备 PPI 参数"></a>苹果设备 PPI 参数</h3><p><img src="https://p2.ssl.qhimg.com/t01ea8b64b8834a6092.png" alt="image"></p>
+<hr>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.函数声明和 函数表达式 区别</p>
+<ul>
+<li>在解释器 加载数据时候  有一个函数声明提升 function declaration hoisting</li>
+<li>函数声明在任何代码之前可用</li>
+<li>函数表达式必须等到解析器执行到它所在的代码行</li>
+</ul>
+<p>2.函数调用的三种方式:</p>
+<ul>
+<li>obj.myFunc();</li>
+<li>myFunc.call(obj,arg);</li>
+<li>myFunc.apply(obj,[arg1,arg2..]); </li>
+<li>call 连续参数  apply  接受 array arguments</li>
+<li>fun.call(thisArg[, arg1[, arg2[, …]]])</li>
+<li>fun.apply(thisArg, [argsArray])</li>
+<li><a href="https://segmentfault.com/a/1190000000725712" target="_blank" rel="external">参考文档</a> </li>
+</ul>
+<p>3.构造函数：</p>
 <blockquote>
-<p>思考</p>
-<ol>
-<li>PS中的分辨率/寸指的是什么？</li>
-<li>做web设计的时候通常设置为72 ？</li>
-<li>做图片输出的时候通常设置为300 ？</li>
-<li>苹果鼓吹的retina又是什么呢？1080p 4k 等概念？</li>
-<li>分辨率 分为显示分辨率 和 图片分辨率 分别指什么？<br>独立完成思考题，恭喜你 完成本课程学习！</li>
-</ol>
+<p>这个新创建的对象的 prototype 被指向到构造函数的 prototype。</p>
 </blockquote>
+<ul>
+<li>通过 new 关键字方式调用的函数都被认为是构造函数。 </li>
+<li>在构造函数内部</li>
+<li>也就是被调用的函数内</li>
+<li>this 指向新创建的对象 Object。 </li>
+</ul>
+<p>4.原型对象</p>
+<ul>
+<li>原型对象：有 constructor 指针指向构造函数. 是不安全属性容易被重写！</li>
+<li>实例：指向原型对象的内部指针 [proto ]. constructor 属性默认调用prototype对象的constructor.</li>
+<li>All objects inherit a constructor property from their prototype:</li>
+</ul>
+<hr>
+<h3 id="arguments对象"><a href="#arguments对象" class="headerlink" title="arguments对象"></a>arguments对象</h3><ol>
+<li>转换成数组</li>
+<li>var args = Array.prototype.silce.call(arguments);</li>
+<li>callee 属性  指向拥有arguments对象的函数</li>
+</ol>
+<hr>
+<h3 id="object-对象"><a href="#object-对象" class="headerlink" title="object 对象"></a>object 对象</h3><p>1.Object.defineProperty() 参数 对象，属性，描述符（descriptor）<br>descriptor: configurable emumerable writable value 中一个或多个。</p>
+<ul>
+<li>configurable    true 可以从对象属性删除 false 不能从对象属性删除 delete会报错</li>
+<li>emumerable </li>
+<li>writable        true 可读写， flase  只读</li>
+<li>value           属性的值</li>
+</ul>
+<hr>
 
       
     </div>
@@ -382,7 +407,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/design/" rel="tag"># design</a>
+            <a href="/tags/js/" rel="tag"># js</a>
           
         </div>
       
@@ -395,15 +420,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/08/28/js-curry/" rel="next" title="柯里化">
+                <i class="fa fa-chevron-left"></i> 柯里化
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/28/gulp-plugins/" rel="prev" title="gulp常用插件">
-                gulp常用插件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -528,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#移动端设计知识库"><span class="nav-number">1.</span> <span class="nav-text">移动端设计知识库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关键词"><span class="nav-number">1.0.1.</span> <span class="nav-text">关键词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#px：physical-pixel"><span class="nav-number">1.0.2.</span> <span class="nav-text">px：physical pixel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-px"><span class="nav-number">1.0.3.</span> <span class="nav-text">css px</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pt-point，点，"><span class="nav-number">1.0.4.</span> <span class="nav-text">pt: point，点，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dip-设备独立像素"><span class="nav-number">1.0.5.</span> <span class="nav-text">dip 设备独立像素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较单位"><span class="nav-number">1.1.</span> <span class="nav-text">比较单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DPI-点每英寸"><span class="nav-number">1.1.1.</span> <span class="nav-text">DPI 点每英寸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PPI-像素每英寸"><span class="nav-number">1.1.2.</span> <span class="nav-text">PPI 像素每英寸</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PPI-参数数据"><span class="nav-number">1.2.</span> <span class="nav-text">PPI 参数数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安卓端-PPI-参数"><span class="nav-number">1.2.1.</span> <span class="nav-text">安卓端 PPI 参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#苹果设备-PPI-参数"><span class="nav-number">1.2.2.</span> <span class="nav-text">苹果设备 PPI 参数</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js对象"><span class="nav-number">1.</span> <span class="nav-text">js对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#this-对象"><span class="nav-number">1.0.1.</span> <span class="nav-text">this 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">1.0.2.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments对象"><span class="nav-number">1.0.3.</span> <span class="nav-text">arguments对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#object-对象"><span class="nav-number">1.0.4.</span> <span class="nav-text">object 对象</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
