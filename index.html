@@ -603,130 +603,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/js-curry/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MicroJes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="web点滴">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/28/js-curry/" itemprop="url">柯里化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
-                2017-08-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><ul>
-<li>延时计算</li>
-<li>通用写法<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var currying = function (fn) &#123;</div><div class="line">    var _args = [];</div><div class="line">    function base() &#123;</div><div class="line">        if (arguments.length === 0) &#123;</div><div class="line">            return fn.apply(this, _args);</div><div class="line">        &#125; else &#123;</div><div class="line">            Array.prototype.push.apply(_args, [].slice.call(arguments));</div><div class="line">            return logic;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return base;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var add = currying(function()&#123;</div><div class="line">    return [].slice.call(arguments).reduce(function(a,b)&#123;</div><div class="line">       return a + b;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">add(1,2,3)(4)(5)();</div></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/gulp-plugins/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -825,6 +701,130 @@
 <h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
 <p>插件用来压缩css文件。</p>
 </blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/js-curry/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MicroJes">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web点滴">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/28/js-curry/" itemprop="url">柯里化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><ul>
+<li>延时计算</li>
+<li>通用写法<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var currying = function (fn) &#123;</div><div class="line">    var _args = [];</div><div class="line">    function base() &#123;</div><div class="line">        if (arguments.length === 0) &#123;</div><div class="line">            return fn.apply(this, _args);</div><div class="line">        &#125; else &#123;</div><div class="line">            Array.prototype.push.apply(_args, [].slice.call(arguments));</div><div class="line">            return logic;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return base;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var add = currying(function()&#123;</div><div class="line">    return [].slice.call(arguments).reduce(function(a,b)&#123;</div><div class="line">       return a + b;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">add(1,2,3)(4)(5)();</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
           
         
@@ -1011,6 +1011,144 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/28/html-view/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MicroJes">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web点滴">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/28/html-view/" itemprop="url">viewport适口</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T13:27:33+08:00">
+                2017-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h1><ul>
+<li><p>visual viewport</p>
+<h2 id="可视区域"><a href="#可视区域" class="headerlink" title="  - 可视区域 "></a>  - 可视区域 </h2><pre><code>window.innerWidth - Height
+</code></pre><hr>
+</li>
+<li><p>layout viewport </p>
+<h2 id="把-viewport-设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）"><a href="#把-viewport-设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）" class="headerlink" title="  - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）"></a>  - 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）</h2><pre><code>document.documentElement.clientWidth - Height
+</code></pre><hr>
+</li>
+<li><p>ideal viewport</p>
+<ul>
+<li>ideal viewport的宽度等于移动设备的屏幕宽度</li>
+<li>针对ideal viewport而设计的网站，不需要用户手动缩放，也不需要出现横向滚动条，都可以完美的呈现给用户。</li>
+</ul>
+</li>
+</ul>
+<h2 id="width-device-width"><a href="#width-device-width" class="headerlink" title="width=device-width"></a>width=device-width</h2><ul>
+<li>因为meta viewport中的width能控制layout viewport的宽度，所以我们只需要把width设为width-device这个特殊的值就行了。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1057,7 +1195,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
@@ -1070,7 +1208,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>
