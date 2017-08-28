@@ -206,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -216,7 +216,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -292,7 +292,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T14:27:33+08:00">
                 2017-08-28
@@ -442,276 +442,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/js-curry/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MicroJes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="web点滴">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/28/js-curry/" itemprop="url">柯里化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
-                2017-08-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><ul>
-<li>延时计算</li>
-<li>通用写法<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var currying = function (fn) &#123;</div><div class="line">    var _args = [];</div><div class="line">    function base() &#123;</div><div class="line">        if (arguments.length === 0) &#123;</div><div class="line">            return fn.apply(this, _args);</div><div class="line">        &#125; else &#123;</div><div class="line">            Array.prototype.push.apply(_args, [].slice.call(arguments));</div><div class="line">            return logic;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return base;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var add = currying(function()&#123;</div><div class="line">    return [].slice.call(arguments).reduce(function(a,b)&#123;</div><div class="line">       return a + b;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">add(1,2,3)(4)(5)();</div></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/gulp-plugins/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MicroJes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="web点滴">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/28/gulp-plugins/" itemprop="url">gulp常用插件</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
-                2017-08-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h5 id="gulp-load-plugins"><a href="#gulp-load-plugins" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
-<p>将所有gulp开头的文件load，</p>
-</blockquote>
-<h5 id="require-“gulp-load-plugins”"><a href="#require-“gulp-load-plugins”" class="headerlink" title="$=require(“gulp-load-plugins”),"></a>$=require(“gulp-load-plugins”),</h5><blockquote>
-<p>通过$访问gulp相关的插件。</p>
-</blockquote>
-<h5 id="gulp-load-plugins-1"><a href="#gulp-load-plugins-1" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
-<p>这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。</p>
-</blockquote>
-<h5 id="gulp-jade"><a href="#gulp-jade" class="headerlink" title="gulp-jade"></a>gulp-jade</h5><blockquote>
-<p>编辑jade</p>
-</blockquote>
-<h5 id="gulp-less"><a href="#gulp-less" class="headerlink" title="gulp-less"></a>gulp-less</h5><blockquote>
-<p> 编辑less 文件</p>
-</blockquote>
-<h5 id="gulp-flatten"><a href="#gulp-flatten" class="headerlink" title="gulp-flatten"></a>gulp-flatten</h5><blockquote>
-<p>平面任意嵌套的数组，化成非数组项的非嵌套列表</p>
-</blockquote>
-<h5 id="gulp-plumber"><a href="#gulp-plumber" class="headerlink" title="gulp-plumber"></a>gulp-plumber</h5><blockquote>
-<p>Prevent pipe breaking caused by errors from gulp plugins</p>
-</blockquote>
-<h5 id="gulp-uglify"><a href="#gulp-uglify" class="headerlink" title="gulp-uglify"></a>gulp-uglify</h5><blockquote>
-<p>插件用来压缩js文件。</p>
-</blockquote>
-<h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
-<p>插件用来压缩css文件。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/git-base/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -741,7 +471,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
                 2017-08-28
@@ -873,6 +603,276 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/gulp-plugins/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MicroJes">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web点滴">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/28/gulp-plugins/" itemprop="url">gulp常用插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="gulp-load-plugins"><a href="#gulp-load-plugins" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>将所有gulp开头的文件load，</p>
+</blockquote>
+<h5 id="require-“gulp-load-plugins”"><a href="#require-“gulp-load-plugins”" class="headerlink" title="$=require(“gulp-load-plugins”),"></a>$=require(“gulp-load-plugins”),</h5><blockquote>
+<p>通过$访问gulp相关的插件。</p>
+</blockquote>
+<h5 id="gulp-load-plugins-1"><a href="#gulp-load-plugins-1" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。</p>
+</blockquote>
+<h5 id="gulp-jade"><a href="#gulp-jade" class="headerlink" title="gulp-jade"></a>gulp-jade</h5><blockquote>
+<p>编辑jade</p>
+</blockquote>
+<h5 id="gulp-less"><a href="#gulp-less" class="headerlink" title="gulp-less"></a>gulp-less</h5><blockquote>
+<p> 编辑less 文件</p>
+</blockquote>
+<h5 id="gulp-flatten"><a href="#gulp-flatten" class="headerlink" title="gulp-flatten"></a>gulp-flatten</h5><blockquote>
+<p>平面任意嵌套的数组，化成非数组项的非嵌套列表</p>
+</blockquote>
+<h5 id="gulp-plumber"><a href="#gulp-plumber" class="headerlink" title="gulp-plumber"></a>gulp-plumber</h5><blockquote>
+<p>Prevent pipe breaking caused by errors from gulp plugins</p>
+</blockquote>
+<h5 id="gulp-uglify"><a href="#gulp-uglify" class="headerlink" title="gulp-uglify"></a>gulp-uglify</h5><blockquote>
+<p>插件用来压缩js文件。</p>
+</blockquote>
+<h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
+<p>插件用来压缩css文件。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/js-curry/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MicroJes">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web点滴">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/28/js-curry/" itemprop="url">柯里化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:33+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><ul>
+<li>延时计算</li>
+<li>通用写法<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var currying = function (fn) &#123;</div><div class="line">    var _args = [];</div><div class="line">    function base() &#123;</div><div class="line">        if (arguments.length === 0) &#123;</div><div class="line">            return fn.apply(this, _args);</div><div class="line">        &#125; else &#123;</div><div class="line">            Array.prototype.push.apply(_args, [].slice.call(arguments));</div><div class="line">            return logic;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return base;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var add = currying(function()&#123;</div><div class="line">    return [].slice.call(arguments).reduce(function(a,b)&#123;</div><div class="line">       return a + b;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">add(1,2,3)(4)(5)();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/28/design/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -902,7 +902,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-28T13:27:31+08:00">
                 2017-08-28
@@ -1053,7 +1053,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T13:27:33+08:00">
                 2017-04-28
@@ -1105,8 +1105,10 @@
 <li>浏览器可视区域大小。可理解为手机物理屏幕。<br>宽度可通过 Js 获取(不支持Android2, Opera Mini, UC8)</li>
 </ul>
 <hr>
-<p>window.innerWidth</p>
-<h2 id="window-innerHeight"><a href="#window-innerHeight" class="headerlink" title="window.innerHeight"></a>window.innerHeight</h2><h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
+<pre><code>window.innerWidth
+window.innerHeight
+</code></pre><hr>
+<h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
 <li>由Peter-Paul Koch提出的一种概念，一个完美适配移动设备的 viewport。理想状态是不需要用户缩放和横向滚动条就能正常查看，显示的文字大小合适，不区分分辨率，屏幕密度等。</li>
 </ul>
 <hr>
@@ -1205,7 +1207,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -1218,7 +1220,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
@@ -1268,7 +1270,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

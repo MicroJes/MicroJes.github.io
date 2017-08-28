@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="web点滴">
 <meta property="og:description" content="手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。  虚拟窗口（layout viewpor">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-08-28T10:55:51.000Z">
+<meta property="og:updated_time" content="2017-08-28T10:57:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="viewport适口">
 <meta name="twitter:description" content="手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。  虚拟窗口（layout viewpor">
@@ -206,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -216,7 +216,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -290,7 +290,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T13:27:33+08:00">
                 2017-04-28
@@ -340,8 +340,10 @@
 <li>浏览器可视区域大小。可理解为手机物理屏幕。<br>宽度可通过 Js 获取(不支持Android2, Opera Mini, UC8)</li>
 </ul>
 <hr>
-<p>window.innerWidth</p>
-<h2 id="window-innerHeight"><a href="#window-innerHeight" class="headerlink" title="window.innerHeight"></a>window.innerHeight</h2><h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
+<pre><code>window.innerWidth
+window.innerHeight
+</code></pre><hr>
+<h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
 <li>由Peter-Paul Koch提出的一种概念，一个完美适配移动设备的 viewport。理想状态是不需要用户缩放和横向滚动条就能正常查看，显示的文字大小合适，不区分分辨率，屏幕密度等。</li>
 </ul>
 <hr>
@@ -450,10 +452,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -474,7 +476,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -487,7 +489,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
@@ -521,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟窗口（layout-viewport）"><span class="nav-number">1.</span> <span class="nav-text">虚拟窗口（layout viewport）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视觉窗口（visual-viewport）"><span class="nav-number">2.</span> <span class="nav-text">视觉窗口（visual viewport）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#window-innerHeight"><span class="nav-number"></span> <span class="nav-text">window.innerHeight</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ideal-viewport"><span class="nav-number">1.</span> <span class="nav-text">ideal viewport</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#meta-viewport"><span class="nav-number">1.</span> <span class="nav-text">meta viewport</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#width-device-width"><span class="nav-number">2.</span> <span class="nav-text">width=device-width</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟窗口（layout-viewport）"><span class="nav-number">1.</span> <span class="nav-text">虚拟窗口（layout viewport）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视觉窗口（visual-viewport）"><span class="nav-number">2.</span> <span class="nav-text">视觉窗口（visual viewport）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ideal-viewport"><span class="nav-number">3.</span> <span class="nav-text">ideal viewport</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#meta-viewport"><span class="nav-number">1.</span> <span class="nav-text">meta viewport</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#width-device-width"><span class="nav-number">2.</span> <span class="nav-text">width=device-width</span></a></li></ol></div>
             
 
           </div>
@@ -553,7 +555,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
