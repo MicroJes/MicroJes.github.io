@@ -3,6 +3,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/08/29/git-base-1/</loc>
+    <lastmod>2017-08-29T11:13:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>git项目创建</title>
+        <pubTime>2017-08-29T10:23:33.000Z</pubTime>
+        
+        <tag>git </tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://yoursite.com/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/08/28/js-base/</loc>
     <lastmod>2017-08-29T10:43:55.000Z</lastmod>
     <data>
@@ -57,26 +77,6 @@
            
              
               <breadCrumb title="js" url="http://yoursite.com/categories/js/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/29/git-base-1/</loc>
-    <lastmod>2017-08-29T10:39:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>git项目创建</title>
-        <pubTime>2017-08-29T10:23:33.000Z</pubTime>
-        
-        <tag>git </tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://yoursite.com/categories/git/"/>
           
         </display>
     </data>
