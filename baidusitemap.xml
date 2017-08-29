@@ -3,12 +3,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/08/28/js-curry/</loc>
-    <lastmod>2017-08-29T10:41:55.000Z</lastmod>
+    <loc>http://yoursite.com/2017/08/28/js-base/</loc>
+    <lastmod>2017-08-29T10:43:55.000Z</lastmod>
     <data>
         <display>
-        <title>柯里化</title>
-        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
+        <title>js对象概念</title>
+        <pubTime>2017-08-28T06:27:33.000Z</pubTime>
         
         <tag>js </tag>
          
@@ -23,12 +23,33 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/08/28/js-base/</loc>
-    <lastmod>2017-08-29T10:41:49.000Z</lastmod>
+    <loc>http://yoursite.com/2017/08/28/git-base/</loc>
+    <lastmod>2017-08-29T10:43:51.000Z</lastmod>
     <data>
         <display>
-        <title>js对象概念</title>
-        <pubTime>2017-08-28T06:27:33.000Z</pubTime>
+        <title>git</title>
+        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
+        
+        <tag>git </tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="http://yoursite.com/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/08/28/js-curry/</loc>
+    <lastmod>2017-08-29T10:41:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>柯里化</title>
+        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
         
         <tag>js </tag>
          
@@ -64,7 +85,6 @@
     
     
     
-    
   <url>
     <loc>http://yoursite.com/2017/04/28/html-view/</loc>
     <lastmod>2017-08-28T11:18:25.000Z</lastmod>
@@ -77,26 +97,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/28/git-base/</loc>
-    <lastmod>2017-08-28T11:11:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>git</title>
-        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
-        
-        <tag>git </tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="http://yoursite.com/categories/git/"/>
-          
         </display>
     </data>
     </url>
