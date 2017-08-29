@@ -99,7 +99,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端设计知识库">
 <meta property="og:url" content="http://yoursite.com/2017/08/28/design/index.html">
-<meta property="og:site_name" content="web点滴">
+<meta property="og:site_name" content="Web Relog">
 <meta property="og:description" content="移动端设计知识库关键词 px：physical pixel 设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。 css pxCSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。 pt: point，点，印刷行业常用单位，等于1/72英寸 dip 设备独立像素 (DIP，device-indep">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://p3.ssl.qhimg.com/t0136463ffdc083f527.jpg">
@@ -143,7 +143,7 @@
 
 
 
-  <title>移动端设计知识库 | web点滴</title>
+  <title>移动端设计知识库 | Web Relog</title>
   
 
 
@@ -179,12 +179,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">web点滴</span>
+        <span class="site-title">Web Relog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">待到秋风吹起 荒野红叶满山 我就到处乱跑 死活不去上班 或者游走树下 或者徘徊水边 或者天天大睡 装作特别有钱</p>
       
   </div>
 
@@ -210,6 +210,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -271,11 +281,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MicroJes">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="web点滴">
+      <meta itemprop="name" content="Web Relog">
     </span>
 
     
@@ -373,7 +383,49 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg" alt="MicroJes wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
 
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="MicroJes WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="MicroJes Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="MicroJes Bitcoin"/>
+        <p>Bitcoin</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -472,11 +524,11 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/avatar.jpg"
                alt="MicroJes" />
           <p class="site-author-name" itemprop="name">MicroJes</p>
            
-              <p class="site-description motion-element" itemprop="description">构造web</p>
+              <p class="site-description motion-element" itemprop="description">Web Relog</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -494,10 +546,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -505,10 +557,10 @@
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
@@ -517,6 +569,30 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/MicroJes" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      Github
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://segmentfault.com/u/microjes" target="_blank" title="segmentfault">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      segmentfault
+                    
+                </a>
+              </span>
+            
           
         </div>
 
