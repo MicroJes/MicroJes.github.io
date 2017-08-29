@@ -3,6 +3,46 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/08/28/js-curry/</loc>
+    <lastmod>2017-08-29T10:41:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>柯里化</title>
+        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
+        
+        <tag>js </tag>
+         
+         
+           
+             
+              <breadCrumb title="js" url="http://yoursite.com/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/08/28/js-base/</loc>
+    <lastmod>2017-08-29T10:41:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>js对象概念</title>
+        <pubTime>2017-08-28T06:27:33.000Z</pubTime>
+        
+        <tag>js </tag>
+         
+         
+           
+             
+              <breadCrumb title="js" url="http://yoursite.com/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/08/29/git-base-1/</loc>
     <lastmod>2017-08-29T10:39:09.000Z</lastmod>
     <data>
@@ -71,40 +111,6 @@
         <pubTime>2017-08-28T05:27:33.000Z</pubTime>
         
         <tag>gulp </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/28/js-curry/</loc>
-    <lastmod>2017-08-28T10:28:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>柯里化</title>
-        <pubTime>2017-08-28T05:27:33.000Z</pubTime>
-        
-        <tag>js </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/28/js-base/</loc>
-    <lastmod>2017-08-28T10:28:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>js对象概念</title>
-        <pubTime>2017-08-28T06:27:33.000Z</pubTime>
-        
-        <tag>js </tag>
          
          
            
