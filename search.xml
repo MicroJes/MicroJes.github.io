@@ -34,14 +34,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[gulp常用插件]]></title>
-    <url>%2F2017%2F08%2F28%2Fgulp-plugins%2F</url>
-    <content type="text"><![CDATA[gulp-load-plugins 将所有gulp开头的文件load， $=require(“gulp-load-plugins”), 通过$访问gulp相关的插件。 gulp-load-plugins 这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。 gulp-jade 编辑jade gulp-less 编辑less 文件 gulp-flatten 平面任意嵌套的数组，化成非数组项的非嵌套列表 gulp-plumber Prevent pipe breaking caused by errors from gulp plugins gulp-uglify 插件用来压缩js文件。 gulp-minify-css 插件用来压缩css文件。]]></content>
-      <tags>
-        <tag>gulp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[柯里化]]></title>
     <url>%2F2017%2F08%2F28%2Fjs-curry%2F</url>
     <content type="text"><![CDATA[柯里化 延时计算 通用写法1234567891011121314151617181920var currying = function (fn) &#123; var _args = []; function base() &#123; if (arguments.length === 0) &#123; return fn.apply(this, _args); &#125; else &#123; Array.prototype.push.apply(_args, [].slice.call(arguments)); return logic; &#125; &#125; return base;&#125;;var add = currying(function()&#123; return [].slice.call(arguments).reduce(function(a,b)&#123; return a + b; &#125;);&#125;)add(1,2,3)(4)(5)();]]></content>
@@ -50,6 +42,14 @@
       </categories>
       <tags>
         <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[gulp常用插件]]></title>
+    <url>%2F2017%2F08%2F28%2Fgulp-plugins%2F</url>
+    <content type="text"><![CDATA[gulp-load-plugins 将所有gulp开头的文件load， $=require(“gulp-load-plugins”), 通过$访问gulp相关的插件。 gulp-load-plugins 这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。 gulp-jade 编辑jade gulp-less 编辑less 文件 gulp-flatten 平面任意嵌套的数组，化成非数组项的非嵌套列表 gulp-plumber Prevent pipe breaking caused by errors from gulp plugins gulp-uglify 插件用来压缩js文件。 gulp-minify-css 插件用来压缩css文件。]]></content>
+      <tags>
+        <tag>gulp</tag>
       </tags>
   </entry>
   <entry>
