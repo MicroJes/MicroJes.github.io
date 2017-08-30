@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Web Relog</title>
+  <subtitle>待到秋风吹起 荒野红叶满山 我就到处乱跑 死活不去上班 或者游走树下 或者徘徊水边 或者天天大睡 装作特别有钱</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-08-29T11:13:59.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>MicroJes</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git项目创建</title>
+    <link href="http://yoursite.com/2017/08/29/git-base-1/"/>
+    <id>http://yoursite.com/2017/08/29/git-base-1/</id>
+    <published>2017-08-29T10:23:33.000Z</published>
+    <updated>2017-08-29T11:13:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;git-start&quot;&gt;&lt;a href=&quot;#git-start&quot; class=&quot;headerlink&quot; title=&quot;git start&quot;&gt;&lt;/a&gt;git start&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;git repository config&lt;/li&gt;
+&lt;/ul&gt;
+&lt;fi
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js对象概念</title>
+    <link href="http://yoursite.com/2017/08/28/js-base/"/>
+    <id>http://yoursite.com/2017/08/28/js-base/</id>
+    <published>2017-08-28T06:27:33.000Z</published>
+    <updated>2017-08-29T10:43:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;js对象&quot;&gt;&lt;a href=&quot;#js对象&quot; class=&quot;headerlink&quot; title=&quot;js对象&quot;&gt;&lt;/a&gt;js对象&lt;/h1&gt;&lt;h3 id=&quot;this-对象&quot;&gt;&lt;a href=&quot;#this-对象&quot; class=&quot;headerlink&quot; title=&quot;thi
+    
+    </summary>
+    
+      <category term="js" scheme="http://yoursite.com/categories/js/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git</title>
+    <link href="http://yoursite.com/2017/08/28/git-base/"/>
+    <id>http://yoursite.com/2017/08/28/git-base/</id>
+    <published>2017-08-28T05:27:33.000Z</published>
+    <updated>2017-08-29T10:43:51.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Git实践&quot;&gt;&lt;a href=&quot;#Git实践&quot; class=&quot;headerlink&quot; title=&quot;Git实践&quot;&gt;&lt;/a&gt;Git实践&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Git 有三种状态&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已提交（committed）&lt;/li&gt;
+&lt;li&gt;已修
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gulp常用插件</title>
+    <link href="http://yoursite.com/2017/08/28/gulp-plugins/"/>
+    <id>http://yoursite.com/2017/08/28/gulp-plugins/</id>
+    <published>2017-08-28T05:27:33.000Z</published>
+    <updated>2017-08-28T10:28:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;gulp-load-plugins&quot;&gt;&lt;a href=&quot;#gulp-load-plugins&quot; class=&quot;headerlink&quot; title=&quot;gulp-load-plugins&quot;&gt;&lt;/a&gt;gulp-load-plugins&lt;/h5&gt;&lt;blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>柯里化</title>
+    <link href="http://yoursite.com/2017/08/28/js-curry/"/>
+    <id>http://yoursite.com/2017/08/28/js-curry/</id>
+    <published>2017-08-28T05:27:33.000Z</published>
+    <updated>2017-08-29T10:41:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;柯里化&quot;&gt;&lt;a href=&quot;#柯里化&quot; class=&quot;headerlink&quot; title=&quot;柯里化&quot;&gt;&lt;/a&gt;柯里化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;延时计算&lt;/li&gt;
+&lt;li&gt;通用写法&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr
+    
+    </summary>
+    
+      <category term="js" scheme="http://yoursite.com/categories/js/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动端设计知识库</title>
+    <link href="http://yoursite.com/2017/08/28/design/"/>
+    <id>http://yoursite.com/2017/08/28/design/</id>
+    <published>2017-08-28T05:27:31.000Z</published>
+    <updated>2017-08-28T10:27:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;移动端设计知识库&quot;&gt;&lt;a href=&quot;#移动端设计知识库&quot; class=&quot;headerlink&quot; title=&quot;移动端设计知识库&quot;&gt;&lt;/a&gt;移动端设计知识库&lt;/h1&gt;&lt;h3 id=&quot;关键词&quot;&gt;&lt;a href=&quot;#关键词&quot; class=&quot;headerlink&quot; ti
+    
+    </summary>
+    
+    
+      <category term="design" scheme="http://yoursite.com/tags/design/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>viewport适口</title>
+    <link href="http://yoursite.com/2017/04/28/html-view/"/>
+    <id>http://yoursite.com/2017/04/28/html-view/</id>
+    <published>2017-04-28T05:27:33.000Z</published>
+    <updated>2017-08-28T11:18:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕&lt;br&gt;Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示
+    
+    </summary>
+    
+    
+      <category term="viewport" scheme="http://yoursite.com/tags/viewport/"/>
+    
+  </entry>
+  
+</feed>
