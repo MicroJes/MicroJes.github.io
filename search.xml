@@ -1,82 +1,382 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[linux-base.1.md]]></title>
-    <url>%2F2017%2F09%2F11%2Flinux-base-1-md%2F</url>
-    <content type="text"><![CDATA[login shell &amp; no-login shell login shell 当你通过终端输入用户名和密码，然后进入到terminal，这时候进入的shell环境就叫做是login shell，例如，通过ssh远程进入到主机。 login shell 运行的脚本文件 .bash_profile no-login shell 例如你已经登陆了你的桌面电脑，这时候在应用管理器中找到termianl图标，然后双击打开终端 no-login shell 运行的脚本文件 .bashrc osx特例 每次运行termianl的时候.默认运行login shell状态 osx 的环境变量都写在 .bash_profile .bashrc .bash_profile 加载顺序 .bash_profile .bashrc]]></content>
-      <categories>
-        <category>osx</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[git init 说明]]></title>
-    <url>%2F2017%2F08%2F29%2Fgit-base-1%2F</url>
-    <content type="text"><![CDATA[git start git repository config 1234git initgit remote add origin https://xxx.xxx.xxx || git@git.xx.xxxgit config user.name xxxgit config user.email xxx start description git config 说明 remote add origin xxx 给本地仓库添加远程仓库 别名 origin git 添加远程仓库https ssh 方式是不同的 ssh 需要通用 ssh key 的方式本地生成ssh key的公钥和私钥将公钥配置到gitserver。ex: github-setting-ssh key https 每次push pull 都需要用户密码 用credential.helper 方式保存1234#windowgit config credential.helper=wincred#osxgit config credential.helper=osxkeychain — git 不同的登录方式ssh https 配置区别还是需要注意]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[js对象概念]]></title>
-    <url>%2F2017%2F08%2F28%2Fjs-base%2F</url>
-    <content type="text"><![CDATA[js对象this 对象 this 指向和调用方式有关 函数调用 对象方法 new表达式 ==普通函数调用==，this为==全局对象或是undefined== ==作为对象的方法==，this为==那个对象== new 表达式，this为以该函数为原型的新创建的对象 使用 apply/call指定 this 这里this的指向根据函数的上下文 用bind绑定固定的this 事件处理函数中的this是当前的触发事件的DOM元素(event.currentTarget) IE attachEvent添加的事件处理函数中this为window 函数1.函数声明和 函数表达式 区别 在解释器 加载数据时候 有一个函数声明提升 function declaration hoisting 函数声明在任何代码之前可用 函数表达式必须等到解析器执行到它所在的代码行 2.函数调用的三种方式: obj.myFunc(); myFunc.call(obj,arg); myFunc.apply(obj,[arg1,arg2..]); call 连续参数 apply 接受 array arguments fun.call(thisArg[, arg1[, arg2[, …]]]) fun.apply(thisArg, [argsArray]) 参考文档 3.构造函数： 这个新创建的对象的 prototype 被指向到构造函数的 prototype。 通过 new 关键字方式调用的函数都被认为是构造函数。 在构造函数内部 也就是被调用的函数内 this 指向新创建的对象 Object。 4.原型对象 原型对象：有 constructor 指针指向构造函数. 是不安全属性容易被重写！ 实例：指向原型对象的内部指针 [proto ]. constructor 属性默认调用prototype对象的constructor. All objects inherit a constructor property from their prototype: arguments对象 转换成数组 var args = Array.prototype.silce.call(arguments); callee 属性 指向拥有arguments对象的函数 object 对象1.Object.defineProperty() 参数 对象，属性，描述符（descriptor）descriptor: configurable emumerable writable value 中一个或多个。 configurable true 可以从对象属性删除 false 不能从对象属性删除 delete会报错 emumerable writable true 可读写， flase 只读 value 属性的值]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[git]]></title>
-    <url>%2F2017%2F08%2F28%2Fgit-base%2F</url>
-    <content type="text"><![CDATA[Git实践 Git 有三种状态 已提交（committed） 已修改（modified） 已暂存（staged） Git global setup: 12git config --global user.name "username"git config --global user.email "username@baidu.cn" Create Repository 1234git initgit config user.name "username"git config credential.helper wincred //Caching password in git git remote add origin https://git.corp.qihoo.net/kidsguard-web/elder.git delete remote branch 1git push origin --delete branchName GIT关键字 pull 拉取远程的repo 仓库内容 fetch push 将修改推送到远程的仓库 checkout 切换分支 branch test 创建test 分支 rebase 修改master指针的位置，使得本branch上面的提交都在最新master之后保持提交树的线性关系。 add 这个命令理解为“添加内容到下一次提交中”而不是“将一个文件添加到项目中”要更加合适。 reset SHA 会保留工作目录（working directory）。这些提交虽然消失了，但是内容还在磁盘上 reset –hard SHA “撤销”所有提交和本地修改 (-hard不保留本地磁盘数据) pull &amp; push (push 类似)123git pull &lt;远程主机名&gt;&lt;远程分支名&gt;:&lt;本地分支名&gt;git pull origin next:master //origin主机的next分支，与本地的master分支合并。git pull origin next //远程分支是与当前分支合并 reset1234git reset -soft head~ 回滚到前一次提交之前git reset --hard HEAD~~ 回滚到前一次提交git reset --hard &lt;commit ID号&gt;git push -f 回滚远程提交的 checkout123git checkout -b newtest 本地新建一个名为newtest的分支git checkout -b localtest origin/test 创建branch为localtest,repo为origin/test.git branch -u origin/my_branch change upstream 的分支 参数文档 Git猴子入门参考文档 GIT 特性和基本命令 基于快照]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[gulp常用插件]]></title>
-    <url>%2F2017%2F08%2F28%2Fgulp-plugins%2F</url>
-    <content type="text"><![CDATA[gulp-load-plugins 将所有gulp开头的文件load， $=require(“gulp-load-plugins”), 通过$访问gulp相关的插件。 gulp-load-plugins 这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。 gulp-jade 编辑jade gulp-less 编辑less 文件 gulp-flatten 平面任意嵌套的数组，化成非数组项的非嵌套列表 gulp-plumber Prevent pipe breaking caused by errors from gulp plugins gulp-uglify 插件用来压缩js文件。 gulp-minify-css 插件用来压缩css文件。]]></content>
-      <tags>
-        <tag>gulp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[柯里化]]></title>
-    <url>%2F2017%2F08%2F28%2Fjs-curry%2F</url>
-    <content type="text"><![CDATA[柯里化 延时计算 通用写法1234567891011121314151617181920var currying = function (fn) &#123; var _args = []; function base() &#123; if (arguments.length === 0) &#123; return fn.apply(this, _args); &#125; else &#123; Array.prototype.push.apply(_args, [].slice.call(arguments)); return logic; &#125; &#125; return base;&#125;;var add = currying(function()&#123; return [].slice.call(arguments).reduce(function(a,b)&#123; return a + b; &#125;);&#125;)add(1,2,3)(4)(5)();]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[移动端设计知识库]]></title>
-    <url>%2F2017%2F08%2F28%2Fdesign%2F</url>
-    <content type="text"><![CDATA[移动端设计知识库关键词 px：physical pixel 设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。 css pxCSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。 pt: point，点，印刷行业常用单位，等于1/72英寸 dip 设备独立像素 (DIP，device-independent pixel，density-independent pixel)(也叫密度无关像素)，可以认为是计算机坐标系统中得一个点，这个点代表一个可以由程序使用并控制的虚拟像素(比如：CSS 像素,只是在android机中CSS 像素就不叫”CSS 像素”了而是叫”设备独立像素”)， 然后由相关系统转换为物理像素。 dip或dp，是安卓开发用的单位 比较单位DPI 点每英寸 dpi (dots per inch)： 打印分辨率 （每英寸所能打印的点数，即打印精度） PPI 像素每英寸ppi (pixels per inch)：图像分辨率 （在图像中，每英寸所包含的像素数目） 计算方法是通过勾股定理算出来对角线包含的像素点然后除以对角线的长度(英寸)得来的 ppi和dpi经常都会出现混用现象。但是他们所用的领域也存在区别。从技术角度说，“像素”只存在于电脑显示领域，而“点”只出现于打印或印刷领域。 PPI 参数数据安卓端 PPI 参数 苹果设备 PPI 参数 思考 PS中的分辨率/寸指的是什么？ 做web设计的时候通常设置为72 ？ 做图片输出的时候通常设置为300 ？ 苹果鼓吹的retina又是什么呢？1080p 4k 等概念？ 分辨率 分为显示分辨率 和 图片分辨率 分别指什么？独立完成思考题，恭喜你 完成本课程学习！]]></content>
-      <tags>
-        <tag>design</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[viewport适口]]></title>
-    <url>%2F2017%2F04%2F28%2Fhtml-view%2F</url>
-    <content type="text"><![CDATA[手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。 虚拟窗口（layout viewport） 把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）。该默认的 viewport 称为 layout viewport。宽度可通过 Js 获取(基本所有设备都支持) 视觉窗口（visual viewport） 浏览器可视区域大小。可理解为手机物理屏幕。宽度可通过 Js 获取(不支持Android2, Opera Mini, UC8) window.innerWidth window.innerHeight ideal viewport 由Peter-Paul Koch提出的一种概念，一个完美适配移动设备的 viewport。理想状态是不需要用户缩放和横向滚动条就能正常查看，显示的文字大小合适，不区分分辨率，屏幕密度等。 &lt;meta name=&quot;viewport&quot;content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0&quot;&gt; meta viewport 移动端默认使用的是 layout viewport ，而我们想要达到类似 ideal viewport 的效果的话，可以通过 meta 标签来对 viewport 进行控制。 width=device-width 因为meta viewport中的width能控制layout viewport的宽度，所以我们只需要把width设为width-device这个特殊的值就行了。 设备像素比 = 设备像素/设备独立像素 设备独立像素 = 设备像素/设备像素比 独立设备像素 就是 css 中的px 独立于设备的用于逻辑上衡量像素的单位。]]></content>
-      <tags>
-        <tag>viewport</tag>
-      </tags>
-  </entry>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[shell状态]]></title>
+      <url>/2017/09/11/linux-base-1-md/</url>
+      <content type="html"><![CDATA[<h2 id="login-shell-amp-no-login-shell"><a href="#login-shell-amp-no-login-shell" class="headerlink" title="login shell &amp; no-login shell"></a>login shell &amp; no-login shell</h2><ul>
+<li>login shell <ul>
+<li>当你通过终端输入用户名和密码，然后进入到terminal，这时候进入的shell环境就叫做是login shell，例如，通过ssh远程进入到主机。</li>
+<li>login shell 运行的脚本文件 .bash_profile</li>
+</ul>
+</li>
+<li>no-login shell<ul>
+<li>例如你已经登陆了你的桌面电脑，这时候在应用管理器中找到termianl图标，然后双击打开终端</li>
+<li>no-login shell 运行的脚本文件 .bashrc</li>
+</ul>
+</li>
+<li>osx特例<ul>
+<li>每次运行termianl的时候.默认运行login shell状态</li>
+<li>osx 的环境变量都写在  .bash_profile</li>
+</ul>
+</li>
+</ul>
+<h2 id="bashrc-bash-profile-加载顺序"><a href="#bashrc-bash-profile-加载顺序" class="headerlink" title=".bashrc .bash_profile 加载顺序"></a>.bashrc .bash_profile 加载顺序</h2><ul>
+<li>.bash_profile  .bashrc </li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> osx </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[git init 说明]]></title>
+      <url>/2017/08/29/git-base-1/</url>
+      <content type="html"><![CDATA[<h2 id="git-start"><a href="#git-start" class="headerlink" title="git start"></a>git start</h2><ul>
+<li>git repository config</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add origin https:<span class="comment">//xxx.xxx.xxx || git@git.xx.xxx</span></div><div class="line">git config user.name  xxx</div><div class="line">git config user.email xxx</div></pre></td></tr></table></figure>
+<h2 id="start-description"><a href="#start-description" class="headerlink" title="start description"></a>start description</h2><ul>
+<li>git config 说明<ul>
+<li>remote add origin xxx 给本地仓库添加远程仓库 别名 origin</li>
+<li>git 添加远程仓库https ssh 方式是不同的</li>
+<li>ssh 需要通用 ssh key 的方式本地生成ssh key的公钥和私钥将公钥配置到gitserver。ex: github-setting-ssh key</li>
+<li>https 每次push pull 都需要用户密码 用credential.helper 方式保存<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#window</div><div class="line">git config credential.helper=wincred</div><div class="line">#osx</div><div class="line">git config credential.helper=osxkeychain</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>— git 不同的登录方式ssh https 配置区别还是需要注意</p>
+]]></content>
+      
+        <categories>
+            
+            <category> git </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[js对象概念]]></title>
+      <url>/2017/08/28/js-base/</url>
+      <content type="html"><![CDATA[<h1 id="js对象"><a href="#js对象" class="headerlink" title="js对象"></a>js对象</h1><h3 id="this-对象"><a href="#this-对象" class="headerlink" title="this 对象"></a>this 对象</h3><blockquote>
+<p>this 指向和调用方式有关 函数调用  对象方法   new表达式</p>
+</blockquote>
+<ul>
+<li>==普通函数调用==，this为==全局对象或是undefined==</li>
+<li>==作为对象的方法==，this为==那个对象==</li>
+<li>new 表达式，this为以该函数为原型的新创建的对象</li>
+<li>使用 apply/call指定 this  这里this的指向根据函数的上下文</li>
+<li>用bind绑定固定的this</li>
+<li>事件处理函数中的this是当前的触发事件的DOM元素(event.currentTarget) </li>
+<li><a href="http://zonxin.github.io/post/2015/11/javascript-this" target="_blank" rel="external">IE attachEvent添加的事件处理函数中this为window</a></li>
+</ul>
+<hr>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.函数声明和 函数表达式 区别</p>
+<ul>
+<li>在解释器 加载数据时候  有一个函数声明提升 function declaration hoisting</li>
+<li>函数声明在任何代码之前可用</li>
+<li>函数表达式必须等到解析器执行到它所在的代码行</li>
+</ul>
+<p>2.函数调用的三种方式:</p>
+<ul>
+<li>obj.myFunc();</li>
+<li>myFunc.call(obj,arg);</li>
+<li>myFunc.apply(obj,[arg1,arg2..]); </li>
+<li>call 连续参数  apply  接受 array arguments</li>
+<li>fun.call(thisArg[, arg1[, arg2[, …]]])</li>
+<li>fun.apply(thisArg, [argsArray])</li>
+<li><a href="https://segmentfault.com/a/1190000000725712" target="_blank" rel="external">参考文档</a> </li>
+</ul>
+<p>3.构造函数：</p>
+<blockquote>
+<p>这个新创建的对象的 prototype 被指向到构造函数的 prototype。</p>
+</blockquote>
+<ul>
+<li>通过 new 关键字方式调用的函数都被认为是构造函数。 </li>
+<li>在构造函数内部</li>
+<li>也就是被调用的函数内</li>
+<li>this 指向新创建的对象 Object。 </li>
+</ul>
+<p>4.原型对象</p>
+<ul>
+<li>原型对象：有 constructor 指针指向构造函数. 是不安全属性容易被重写！</li>
+<li>实例：指向原型对象的内部指针 [proto ]. constructor 属性默认调用prototype对象的constructor.</li>
+<li>All objects inherit a constructor property from their prototype:</li>
+</ul>
+<hr>
+<h3 id="arguments对象"><a href="#arguments对象" class="headerlink" title="arguments对象"></a>arguments对象</h3><ol>
+<li>转换成数组</li>
+<li>var args = Array.prototype.silce.call(arguments);</li>
+<li>callee 属性  指向拥有arguments对象的函数</li>
+</ol>
+<hr>
+<h3 id="object-对象"><a href="#object-对象" class="headerlink" title="object 对象"></a>object 对象</h3><p>1.Object.defineProperty() 参数 对象，属性，描述符（descriptor）<br>descriptor: configurable emumerable writable value 中一个或多个。</p>
+<ul>
+<li>configurable    true 可以从对象属性删除 false 不能从对象属性删除 delete会报错</li>
+<li>emumerable </li>
+<li>writable        true 可读写， flase  只读</li>
+<li>value           属性的值</li>
+</ul>
+<hr>
+]]></content>
+      
+        <categories>
+            
+            <category> js </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> js </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[git]]></title>
+      <url>/2017/08/28/git-base/</url>
+      <content type="html"><![CDATA[<h2 id="Git实践"><a href="#Git实践" class="headerlink" title="Git实践"></a>Git实践</h2><ul>
+<li><p>Git 有三种状态</p>
+<ul>
+<li>已提交（committed）</li>
+<li>已修改（modified）</li>
+<li>已暂存（staged）</li>
+</ul>
+</li>
+<li><p>Git global setup:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"username"</span></div><div class="line">git config --global user.email <span class="string">"username@baidu.cn"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Create Repository</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git config user.name <span class="string">"username"</span></div><div class="line">git config credential.helper wincred <span class="comment">//Caching password in git </span></div><div class="line">git remote add origin https:<span class="comment">//git.corp.qihoo.net/kidsguard-web/elder.git</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>delete remote branch</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin --<span class="keyword">delete</span> branchName</div></pre></td></tr></table></figure>
+</li>
+<li><p>GIT关键字</p>
+<ul>
+<li>pull  拉取远程的repo 仓库内容</li>
+<li>fetch   </li>
+<li>push    将修改推送到远程的仓库</li>
+<li>checkout 切换分支</li>
+<li>branch test 创建test 分支</li>
+<li>rebase   修改master指针的位置，使得本branch上面的提交都在最新master之后保持提交树的线性关系。</li>
+<li>add 这个命令理解为“添加内容到下一次提交中”而不是“将一个文件添加到项目中”要更加合适。</li>
+<li>reset SHA 会保留工作目录（working directory）。这些提交虽然消失了，但是内容还在磁盘上</li>
+<li>reset –hard SHA “撤销”所有提交和本地修改 (-hard不保留本地磁盘数据)</li>
+</ul>
+</li>
+</ul>
+<h4 id="pull-amp-push-push-类似"><a href="#pull-amp-push-push-类似" class="headerlink" title="pull &amp; push (push 类似)"></a>pull &amp; push (push 类似)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git pull &lt;远程主机名&gt;&lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">git pull origin next:master     //origin主机的next分支，与本地的master分支合并。</div><div class="line">git pull origin next            //远程分支是与当前分支合并</div></pre></td></tr></table></figure>
+<h4 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git reset -soft head~ 回滚到前一次提交之前</div><div class="line">git reset --hard HEAD~~  回滚到前一次提交</div><div class="line">git reset --hard &lt;commit ID号&gt;</div><div class="line">git push -f 回滚远程提交的</div></pre></td></tr></table></figure>
+<h4 id="checkout"><a href="#checkout" class="headerlink" title="checkout"></a>checkout</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git checkout -b  newtest  本地新建一个名为newtest的分支</div><div class="line">git checkout -b  localtest  origin/test  创建branch为localtest,repo为origin/test.</div><div class="line">git branch -u origin/my_branch  change upstream 的分支</div></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>参数文档<ul>
+<li><a href="http://backlogtool.com/git-guide/cn" target="_blank" rel="external">Git猴子入门参考文档</a></li>
+<li><a href="http://fe.iwjw.com/git-ji-ben-ming-ling/" target="_blank" rel="external">GIT 特性和基本命令 基于快照</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> git </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gulp常用插件]]></title>
+      <url>/2017/08/28/gulp-plugins/</url>
+      <content type="html"><![CDATA[<h5 id="gulp-load-plugins"><a href="#gulp-load-plugins" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>将所有gulp开头的文件load，</p>
+</blockquote>
+<h5 id="require-“gulp-load-plugins”"><a href="#require-“gulp-load-plugins”" class="headerlink" title="$=require(“gulp-load-plugins”),"></a>$=require(“gulp-load-plugins”),</h5><blockquote>
+<p>通过$访问gulp相关的插件。</p>
+</blockquote>
+<h5 id="gulp-load-plugins-1"><a href="#gulp-load-plugins-1" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。</p>
+</blockquote>
+<h5 id="gulp-jade"><a href="#gulp-jade" class="headerlink" title="gulp-jade"></a>gulp-jade</h5><blockquote>
+<p>编辑jade</p>
+</blockquote>
+<h5 id="gulp-less"><a href="#gulp-less" class="headerlink" title="gulp-less"></a>gulp-less</h5><blockquote>
+<p> 编辑less 文件</p>
+</blockquote>
+<h5 id="gulp-flatten"><a href="#gulp-flatten" class="headerlink" title="gulp-flatten"></a>gulp-flatten</h5><blockquote>
+<p>平面任意嵌套的数组，化成非数组项的非嵌套列表</p>
+</blockquote>
+<h5 id="gulp-plumber"><a href="#gulp-plumber" class="headerlink" title="gulp-plumber"></a>gulp-plumber</h5><blockquote>
+<p>Prevent pipe breaking caused by errors from gulp plugins</p>
+</blockquote>
+<h5 id="gulp-uglify"><a href="#gulp-uglify" class="headerlink" title="gulp-uglify"></a>gulp-uglify</h5><blockquote>
+<p>插件用来压缩js文件。</p>
+</blockquote>
+<h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
+<p>插件用来压缩css文件。</p>
+</blockquote>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> gulp </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[柯里化]]></title>
+      <url>/2017/08/28/js-curry/</url>
+      <content type="html"><![CDATA[<h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><ul>
+<li>延时计算</li>
+<li>通用写法<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var currying = function (fn) &#123;</div><div class="line">    var _args = [];</div><div class="line">    function base() &#123;</div><div class="line">        if (arguments.length === 0) &#123;</div><div class="line">            return fn.apply(this, _args);</div><div class="line">        &#125; else &#123;</div><div class="line">            Array.prototype.push.apply(_args, [].slice.call(arguments));</div><div class="line">            return logic;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return base;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var add = currying(function()&#123;</div><div class="line">    return [].slice.call(arguments).reduce(function(a,b)&#123;</div><div class="line">       return a + b;</div><div class="line">    &#125;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">add(1,2,3)(4)(5)();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> js </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> js </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[移动端设计知识库]]></title>
+      <url>/2017/08/28/design/</url>
+      <content type="html"><![CDATA[<h1 id="移动端设计知识库"><a href="#移动端设计知识库" class="headerlink" title="移动端设计知识库"></a>移动端设计知识库</h1><h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><hr>
+<h3 id="px：physical-pixel"><a href="#px：physical-pixel" class="headerlink" title="px：physical pixel"></a>px：physical pixel</h3><blockquote>
+<p>设备能控制显示的最小单位，我们可以把这些像素看作成显示器上一个个的点。</p>
+<h3 id="css-px"><a href="#css-px" class="headerlink" title="css px"></a>css px</h3><p>CSS像素是Web编程的概念，独立于设备的用于逻辑上衡量像素的单位，也就是说我在做网页时用到的CSS像素单位，是抽象的，而不是实际存在的。</p>
+<h3 id="pt-point，点，"><a href="#pt-point，点，" class="headerlink" title="pt: point，点，"></a>pt: point，点，</h3><p>印刷行业常用单位，等于1/72英寸</p>
+<h3 id="dip-设备独立像素"><a href="#dip-设备独立像素" class="headerlink" title="dip 设备独立像素"></a>dip 设备独立像素</h3><p> (DIP，device-independent pixel，density-independent pixel)(也叫密度无关像素)，可以认为是计算机坐标系统中得一个点，这个点代表一个可以由程序使用并控制的虚拟像素(比如：CSS 像素,只是在android机中CSS 像素就不叫”CSS 像素”了而是叫”设备独立像素”)， 然后由相关系统转换为物理像素。</p>
+<blockquote>
+<p>dip或dp，是安卓开发用的单位</p>
+</blockquote>
+</blockquote>
+<h2 id="比较单位"><a href="#比较单位" class="headerlink" title="比较单位"></a>比较单位</h2><h3 id="DPI-点每英寸"><a href="#DPI-点每英寸" class="headerlink" title="DPI 点每英寸"></a>DPI 点每英寸</h3><blockquote>
+<p> dpi (dots per inch)： 打印分辨率 （每英寸所能打印的点数，即打印精度）</p>
+<h3 id="PPI-像素每英寸"><a href="#PPI-像素每英寸" class="headerlink" title="PPI 像素每英寸"></a>PPI 像素每英寸</h3><p>ppi (pixels per inch)：图像分辨率 （在图像中，每英寸所包含的像素数目）</p>
+<blockquote>
+<p>  计算方法是通过勾股定理算出来对角线包含的像素点然后除以对角线的长度(英寸)得来的</p>
+<ul>
+<li>ppi和dpi经常都会出现混用现象。但是他们所用的领域也存在区别。从技术角度说，“像素”只存在于电脑显示领域，而“点”只出现于打印或印刷领域。</li>
+</ul>
+</blockquote>
+</blockquote>
+<h2 id="PPI-参数数据"><a href="#PPI-参数数据" class="headerlink" title="PPI 参数数据"></a>PPI 参数数据</h2><h3 id="安卓端-PPI-参数"><a href="#安卓端-PPI-参数" class="headerlink" title="安卓端 PPI 参数"></a>安卓端 PPI 参数</h3><p><img src="https://p3.ssl.qhimg.com/t0136463ffdc083f527.jpg" alt="image"></p>
+<h3 id="苹果设备-PPI-参数"><a href="#苹果设备-PPI-参数" class="headerlink" title="苹果设备 PPI 参数"></a>苹果设备 PPI 参数</h3><p><img src="https://p2.ssl.qhimg.com/t01ea8b64b8834a6092.png" alt="image"></p>
+<blockquote>
+<p>思考</p>
+<ol>
+<li>PS中的分辨率/寸指的是什么？</li>
+<li>做web设计的时候通常设置为72 ？</li>
+<li>做图片输出的时候通常设置为300 ？</li>
+<li>苹果鼓吹的retina又是什么呢？1080p 4k 等概念？</li>
+<li>分辨率 分为显示分辨率 和 图片分辨率 分别指什么？<br>独立完成思考题，恭喜你 完成本课程学习！</li>
+</ol>
+</blockquote>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> design </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[viewport适口]]></title>
+      <url>/2017/04/28/html-view/</url>
+      <content type="html"><![CDATA[<ul>
+<li>手机屏幕相对着桌面浏览器小，传统网页的设计在手机上体验糟糕<br>Apple 在移动版 Safari 中定义了 viewport meta 标签(如果没记错最早提出的话)，用于创建一个虚拟窗口（layout viewport），这个虚拟窗口的分辨率接近于桌面显示器，Apple 将其定义为980px。然后将虚拟窗口映射到移动设备的屏幕上，按比例缩放并重新渲染网页。</li>
+</ul>
+<h3 id="虚拟窗口（layout-viewport）"><a href="#虚拟窗口（layout-viewport）" class="headerlink" title="虚拟窗口（layout viewport）"></a>虚拟窗口（layout viewport）</h3><ul>
+<li>把 viewport 设置为一个比较宽的值（防止太窄而在可视区域中显示错乱）。该默认的 viewport 称为 layout viewport。<br>宽度可通过 Js 获取(基本所有设备都支持)</li>
+</ul>
+<h3 id="视觉窗口（visual-viewport）"><a href="#视觉窗口（visual-viewport）" class="headerlink" title="视觉窗口（visual viewport）"></a>视觉窗口（visual viewport）</h3><ul>
+<li>浏览器可视区域大小。可理解为手机物理屏幕。<br>宽度可通过 Js 获取(不支持Android2, Opera Mini, UC8)</li>
+</ul>
+<hr>
+<pre><code>window.innerWidth
+window.innerHeight
+</code></pre><hr>
+<h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a>ideal viewport</h3><ul>
+<li>由Peter-Paul Koch提出的一种概念，一个完美适配移动设备的 viewport。理想状态是不需要用户缩放和横向滚动条就能正常查看，显示的文字大小合适，不区分分辨率，屏幕密度等。</li>
+</ul>
+<hr>
+<pre><code>&lt;meta name=&quot;viewport&quot;content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0&quot;&gt;
+</code></pre><hr>
+<h3 id="meta-viewport"><a href="#meta-viewport" class="headerlink" title="meta viewport"></a>meta viewport</h3><ul>
+<li>移动端默认使用的是 layout viewport ，而我们想要达到类似 ideal viewport 的效果的话，可以通过 meta 标签来对 viewport 进行控制。</li>
+</ul>
+<h3 id="width-device-width"><a href="#width-device-width" class="headerlink" title="width=device-width"></a>width=device-width</h3><ul>
+<li><p>因为meta viewport中的width能控制layout viewport的宽度，所以我们只需要把width设为width-device这个特殊的值就行了。</p>
+</li>
+<li><p>设备像素比 = 设备像素/设备独立像素 </p>
+</li>
+<li><p>设备独立像素 =  设备像素/设备像素比</p>
+</li>
+<li><p>独立设备像素 就是 css 中的px  独立于设备的用于逻辑上衡量像素的单位。</p>
+</li>
+</ul>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> viewport </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
 </search>

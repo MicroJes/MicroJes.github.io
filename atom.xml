@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-11T09:17:10.000Z</updated>
+  <updated>2017-09-11T09:19:13.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>linux-base.1.md</title>
+    <title>shell状态</title>
     <link href="http://yoursite.com/2017/09/11/linux-base-1-md/"/>
     <id>http://yoursite.com/2017/09/11/linux-base-1-md/</id>
     <published>2017-09-11T09:08:41.000Z</published>
-    <updated>2017-09-11T09:17:10.000Z</updated>
+    <updated>2017-09-11T09:19:13.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="login-shell-amp-no-login-shell"><a href="#login-shell-amp-no-login-shell" class="headerlink" title="login shell &amp; no-login shell"></a>login shell &amp; no-login shell</h2><ul>
 <li>login shell <ul>
