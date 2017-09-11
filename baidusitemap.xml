@@ -3,11 +3,31 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/08/29/git-base-1/</loc>
-    <lastmod>2017-08-29T11:13:59.000Z</lastmod>
+    <loc>http://yoursite.com/2017/09/11/linux-base-1-md/</loc>
+    <lastmod>2017-09-11T09:17:10.000Z</lastmod>
     <data>
         <display>
-        <title>git项目创建</title>
+        <title>linux-base.1.md</title>
+        <pubTime>2017-09-11T09:08:41.000Z</pubTime>
+        
+        <tag>linux </tag>
+         
+         
+           
+             
+              <breadCrumb title="osx" url="http://yoursite.com/categories/osx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/08/29/git-base-1/</loc>
+    <lastmod>2017-09-06T06:20:39.000Z</lastmod>
+    <data>
+        <display>
+        <title>git init 说明</title>
         <pubTime>2017-08-29T10:23:33.000Z</pubTime>
         
         <tag>git </tag>

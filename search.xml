@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[git项目创建]]></title>
+    <title><![CDATA[linux-base.1.md]]></title>
+    <url>%2F2017%2F09%2F11%2Flinux-base-1-md%2F</url>
+    <content type="text"><![CDATA[login shell &amp; no-login shell login shell 当你通过终端输入用户名和密码，然后进入到terminal，这时候进入的shell环境就叫做是login shell，例如，通过ssh远程进入到主机。 login shell 运行的脚本文件 .bash_profile no-login shell 例如你已经登陆了你的桌面电脑，这时候在应用管理器中找到termianl图标，然后双击打开终端 no-login shell 运行的脚本文件 .bashrc osx特例 每次运行termianl的时候.默认运行login shell状态 osx 的环境变量都写在 .bash_profile .bashrc .bash_profile 加载顺序 .bash_profile .bashrc]]></content>
+      <categories>
+        <category>osx</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git init 说明]]></title>
     <url>%2F2017%2F08%2F29%2Fgit-base-1%2F</url>
-    <content type="text"><![CDATA[git start git repository config 1234git initgit remote add origin https://xxx.xxx.xxx || git@git.xx.xxxgit config user.name xxxgit config user.email xxx start description git config 说明 remote add origin xxx 给本地仓库添加远程仓库 别名 origin git 添加远程仓库https ssh 方式是不同的 ssh 需要通用 ssh key 的方式本地生成ssh key的公钥和私钥将公钥配置到gitserver。ex: github-setting-ssh key https 每次push pull 都需要用户密码 用credential.helper 方式保存1234#windowgit config credential.helper=wincred#osxgit config redential.helper=osxkeychain — git 不同的登录方式ssh https 配置区别还是需要注意]]></content>
+    <content type="text"><![CDATA[git start git repository config 1234git initgit remote add origin https://xxx.xxx.xxx || git@git.xx.xxxgit config user.name xxxgit config user.email xxx start description git config 说明 remote add origin xxx 给本地仓库添加远程仓库 别名 origin git 添加远程仓库https ssh 方式是不同的 ssh 需要通用 ssh key 的方式本地生成ssh key的公钥和私钥将公钥配置到gitserver。ex: github-setting-ssh key https 每次push pull 都需要用户密码 用credential.helper 方式保存1234#windowgit config credential.helper=wincred#osxgit config credential.helper=osxkeychain — git 不同的登录方式ssh https 配置区别还是需要注意]]></content>
       <categories>
         <category>git</category>
       </categories>
