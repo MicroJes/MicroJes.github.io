@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-19T03:52:35.000Z</updated>
+  <updated>2017-09-19T03:58:36.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,98 +20,80 @@
     <link href="http://yoursite.com/2017/09/19/js-module-1-md/"/>
     <id>http://yoursite.com/2017/09/19/js-module-1-md/</id>
     <published>2017-09-19T03:50:04.000Z</published>
-    <updated>2017-09-19T03:52:35.000Z</updated>
+    <updated>2017-09-19T03:58:36.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="常用JS库"><a href="#常用JS库" class="headerlink" title="常用JS库"></a>常用JS库</h1><blockquote>
-<div id="article-text">
-
-
-
-
-</div></blockquote>
-<p></p><p><a href="http://vincentgarreau.com/particles.js/" target="_blank" rel="external"><strong>Particles.js&#8202;</strong></a>—&#8202;一个用来在 web 中创建炫酷的浮动粒子的库</p><p></p>
-<p></p><p><a href="https://threejs.org/" target="_blank" rel="external"><strong>Three.js</strong></a>&#8202;—&#8202;一个用来在 web 中创建 3d 物体和 3d 空间的库</p><p></p>
-<p></p><p><a href="https://alvarotrigo.com/fullPage/#firstPage" target="_blank" rel="external"><strong>Fullpage.js</strong></a>—&#8202;快速实现全屏滚动特性</p><p></p>
-<p></p><p><a href="http://www.mattboldt.com/demos/typed-js/" target="_blank" rel="external"><strong>Typed.js</strong></a>&#8202;—&#8202;打字机效果</p><p></p>
-<p></p><p><a href="http://imakewebthings.com/waypoints/" target="_blank" rel="external"><strong>Waypoints.js&#8202;</strong></a>—&#8202;滚动到某个元素位置时触发一个功能</p><p></p>
-<p></p><p><a href="https://highlightjs.org/" target="_blank" rel="external"><strong>Highlight.js</strong>&#8202;</a>—&#8202;web 语法高亮</p><p></p>
-<p></p><p><a href="http://www.chartjs.org/" target="_blank" rel="external"><strong>Chart.js</strong></a>&#8202;—&#8202;使用 JavaScript 创建漂亮的图表</p><p></p>
-<p></p><p><a href="http://instantclick.io/" target="_blank" rel="external"><strong>Instantclick</strong></a>&#8202;—&#8202;能够明显加速网站加载时间，鼠标 hover 时预加载资源</p><p></p>
-<p></p><p><a href="http://gionkunz.github.io/chartist-js/index.html" target="_blank" rel="external"><strong>Chartist</strong></a>&#8202;—&#8202;另一个图表库</p><p></p>
-<p></p><p><a href="http://darsa.in/motio/#!introduction" target="_blank" rel="external"><strong>Motio&#8202;</strong></a>—&#8202;一个基于动画和平移的雪碧图库</p><p></p>
-<p></p><p><a href="http://git.blivesta.com/animsition/" target="_blank" rel="external"><strong>Animsition</strong></a>&#8202;—&#8202;CSS 实现动画过渡的 jQuery 插件</p><p></p>
-<p></p><p><a href="https://github.com/luruke/barba.js" target="_blank" rel="external"><strong>Barba.js</strong></a>&#8202;—&#8202;流式页面过渡</p><p></p>
-<p></p><p><a href="http://zurb.com/playground/twentytwenty" target="_blank" rel="external"><strong>TwentyTwenty&#8202;</strong></a>—&#8202;一个对比图片的可视化 diff 工具</p><p></p>
-<p></p><p><a href="https://github.com/maxwellito/vivus#vivusjs" target="_blank" rel="external"><strong>Vivus.js</strong></a>&#8202;—&#8202;在 SVG 上绘制动画</p><p></p>
-<p></p><p><a href="http://mynameismatthieu.com/WOW/" target="_blank" rel="external"><strong>Wow.js</strong>&#8202;</a>—&#8202;滚动时展现动画</p><p></p>
-<p></p><p><a href="https://github.com/anthonyly/Scrolline.js" target="_blank" rel="external"><strong>Scrolline.js</strong></a>&#8202;—&#8202;页面滚动时显示滚动进度</p><p></p>
-<p></p><p><a href="http://velocityjs.org/" target="_blank" rel="external"><strong>Velocity.js</strong></a>&#8202;—&#8202;快速流畅的 JavaScript 动画</p><p></p>
-<p></p><p><a href="http://michalsnik.github.io/aos/" target="_blank" rel="external"><strong>Animate on scroll</strong></a>&#8202;—&#8202;漂亮的页面滚动元素动画</p><p></p>
-<p></p><p><a href="http://handlebarsjs.com/" target="_blank" rel="external"><strong>Handlebars.js</strong></a>&#8202;—&#8202;Javascript 模板</p><p></p>
-<p></p><p><a href="http://www.pixxelfactory.net/jInvertScroll/" target="_blank" rel="external"><strong>jInvertScroll</strong></a>&#8202;—&#8202;视差滚动</p><p></p>
-<p></p><p><a href="https://github.com/peachananr/onepage-scroll" target="_blank" rel="external"><strong>One page scroll</strong></a>&#8202;—&#8202;又一个页面滚动库</p><p></p>
-<p></p><p><a href="https://github.com/wagerfield/parallax" target="_blank" rel="external"><strong>Parallax.js</strong></a>&#8202;—&#8202;对智能设备方向变化做出响应的视差引擎</p><p></p>
-<p></p><p><a href="http://twitter.github.io/typeahead.js/" target="_blank" rel="external"><strong>Typeahead.js&#8202;</strong></a>—&#8202;搜索补全</p><p></p>
-<p></p><p><a href="http://skidding.github.io/dragdealer/" target="_blank" rel="external"><strong>Dragdealer.js</strong></a>&#8202;—&#8202;炫酷拖拽</p><p></p>
-<p></p><p><a href="http://bouncejs.com/" target="_blank" rel="external"><strong>Bounce.js&#8202;</strong></a>—&#8202;创建炫酷的 CSS3 动画</p><p></p>
-<p></p><p><a href="https://github.com/alvarotrigo/pagePiling.js" target="_blank" rel="external"><strong>Pagepiling.js</strong></a>&#8202;—&#8202;全屏滚动</p><p></p>
-<p></p><p><a href="https://github.com/alvarotrigo/multiscroll.js" target="_blank" rel="external"><strong>Multiscroll.js&#8202;</strong></a>—&#8202;两列垂直反向滚动</p><p></p>
-<p></p><p><a href="http://lab.ejci.net/favico.js/" target="_blank" rel="external"><strong>Favico.js</strong></a>&#8202;—&#8202;动态 favicon</p><p></p>
-<p></p><p><a href="http://aerolab.github.io/midnight.js/" target="_blank" rel="external"><strong>Midnight.js&#8202;</strong></a>—&#8202;固定头部切换效果</p><p></p>
-<p></p><p><a href="http://animejs.com/" target="_blank" rel="external"><strong>Anime.js&#8202;</strong></a>—&#8202;动画库</p><p></p>
-<p></p><p><a href="http://keycode.info/" target="_blank" rel="external"><strong>Keycode</strong></a>&#8202;—&#8202;获取键盘按键的 JavaScript keycode</p><p></p>
-<p></p><p><a href="http://rubaxa.github.io/Sortable/" target="_blank" rel="external"><strong>Sortable</strong></a>&#8202;—&#8202;拖拽插件</p><p></p>
-<p></p><p><a href="http://projects.sergiodinislopes.pt/flexdatalist/" target="_blank" rel="external"><strong>Flexdatalist&#8202;</strong></a>—&#8202;自动补全</p><p></p>
-<p></p><p><a href="https://slideout.js.org/" target="_blank" rel="external"><strong>Slideout.js&#8202;</strong></a>—&#8202;移动应用侧滑导航</p><p></p>
-<p></p><p><a href="http://jquerymy.com/#/" target="_blank" rel="external"><strong>Jquerymy</strong></a>&#8202;—&#8202;使用 jQuery 实现双向数据绑定</p><p></p>
-<p></p><p><a href="http://nosir.github.io/cleave.js/" target="_blank" rel="external"><strong>Cleave.js&#8202;</strong></a>—&#8202;实时格式化输入内容</p><p></p>
-<p></p><p><a href="http://smalljs.org/client-side-routing/page/" target="_blank" rel="external"><strong>Page</strong></a>&#8202;—&#8202;客户端单页应用路由</p><p></p>
-<p></p><p><a href="http://selectize.github.io/selectize.js/" target="_blank" rel="external"><strong>Selectize.js</strong></a>&#8202;—&#8202;用来添加 tag 的 Hybrid 选择框</p><p></p>
-<p></p><p><a href="http://hernansartorio.com/jquery-nice-select/" target="_blank" rel="external"><strong>Nice select&#8202;</strong></a>—&#8202;创建漂亮的选择框的 jQuery 库</p><p></p>
-<p></p><p><a href="http://tether.io/" target="_blank" rel="external"><strong>Tether</strong></a>&#8202;—&#8202;使用固定定位来创建相关元素</p><p></p>
-<p></p><p><a href="https://github.com/HubSpot/shepherd" target="_blank" rel="external"><strong>Shepherd.js&#8202;</strong></a>—&#8202;为应用创建新手引导</p><p></p>
-<p></p><p><a href="https://github.com/HubSpot/tooltip" target="_blank" rel="external"><strong>Tooltip</strong></a>&#8202;—&#8202;tooltip 提示框</p><p></p>
-<p></p><p><a href="https://select2.github.io/" target="_blank" rel="external"><strong>Select2</strong></a>&#8202;—&#8202;Jquery 选择框插件</p><p></p>
-<p></p><p><a href="http://izitoast.marcelodolce.com/" target="_blank" rel="external"><strong>IziToast</strong></a>&#8202;—&#8202;通知弹窗实现</p><p></p>
-<p></p><p><a href="http://izimodal.marcelodolce.com/" target="_blank" rel="external"><strong>IziModal&#8202;</strong></a>—&#8202;模态框实现</p><p></p>
-<p></p><h3 id="css-">CSS 库 / 设计相关</h3><p></p>
-<p></p><p><a href="https://daneden.github.io/animate.css/" target="_blank" rel="external"><strong>Animate.css</strong></a>&#8202;—&#8202;动画库</p><p></p>
-<p></p><p><a href="https://flatuicolors.com/" target="_blank" rel="external"><strong>Flat UI Colors&#8202;</strong></a>—&#8202;扁平化设计配色</p><p></p>
-<p></p><p><a href="https://getmdl.io/index.html" target="_blank" rel="external"><strong>Material design lite</strong></a>—&#8202;基于 Google material design 的框架</p><p></p>
-<p></p><p><a href="https://www.webpagefx.com/web-design/random-color-picker/" target="_blank" rel="external"><strong>Colorrrs&#8202;</strong></a>—&#8202;随机颜色生成器</p><p></p>
-<p></p><p><a href="https://tympanus.net/Development/SectionSeparators/" target="_blank" rel="external"><strong>Section separators</strong></a>&#8202;—&#8202;CSS 实现区域分割</p><p></p>
-<p></p><p><a href="http://topcoat.io/" target="_blank" rel="external"><strong>Topcoat</strong></a>&#8202;—&#8202;框架</p><p></p>
-<p></p><p><a href="https://www.kirupa.com/html5/ken_burns_effect_css.htm" target="_blank" rel="external"><strong>Create ken burns effect&#8202;</strong></a>—&#8202;使用 CSS3 动画实现 Ken burns 特效</p><p></p>
-<p></p><p><a href="http://www.vittoriozaccaria.net/dyn-css/" target="_blank" rel="external"><strong>DynCSS</strong></a>&#8202;—&#8202;给 CSS 添加 function，动态化 CSS</p><p></p>
-<p></p><p><a href="https://www.minimamente.com/example/magic_animations/" target="_blank" rel="external"><strong>Magic animations</strong></a>&#8202;—&#8202;CSS3 实现动画特效</p><p></p>
-<p></p><p><a href="https://webkul.github.io/csspin/" target="_blank" rel="external"><strong>CSSpin</strong></a>&#8202;—&#8202;css spinners 合集</p><p></p>
-<p></p><p><a href="https://feathericons.com/" target="_blank" rel="external"><strong>Feather icons</strong></a>&#8202;—&#8202;Icon 集合</p><p></p>
-<p></p><p><a href="http://ionicons.com/" target="_blank" rel="external"><strong>Ion icons</strong></a>&#8202;—&#8202;Icon 集合</p><p></p>
-<p></p><p><a href="http://fontawesome.io/" target="_blank" rel="external"><strong>Font awesome</strong></a>&#8202;—&#8202;Icon 集合</p><p></p>
-<p></p><p><a href="http://brandmark.io/font-generator/" target="_blank" rel="external"><strong>Font generator</strong></a>&#8202;—&#8202;组合多个字体创建混合字体</p><p></p>
-<p></p><p><a href="https://proto.io/freebies/onoff/" target="_blank" rel="external"><strong>On/Off switch</strong></a>&#8202;—&#8202;使用 CSS 创建 on/off 开关、radio 按钮</p><p></p>
-<p></p><p><a href="https://getuikit.com/" target="_blank" rel="external"><strong>UI Kit</strong></a>&#8202;—&#8202;框架</p><p></p>
-<p></p><p><a href="http://getbootstrap.com/" target="_blank" rel="external"><strong>Bootstrap</strong></a>&#8202;—&#8202;框架</p><p></p>
-<p></p><p><a href="http://foundation.zurb.com/" target="_blank" rel="external"><strong>Foundation&#8202;</strong></a>—&#8202;框架</p><p></p>
-<p></p><h3 id="-">有用的产品/链接</h3><p></p>
-<p></p><p><a href="https://github.com/joshbuchea/HEAD" target="_blank" rel="external"><strong>cheatsheet</strong></a>&#8202;—&#8202;可以写在&lt;head&gt;中的所有标签</p><p></p>
-<p></p><p><a href="https://ghost.org/" target="_blank" rel="external"><strong>Ghost&#8202;</strong></a>—&#8202;基于 Node.js 的博客平台</p><p></p>
-<p></p><p><a href="https://www.whatruns.com/" target="_blank" rel="external"><strong>What runs</strong></a>&#8202;—&#8202;一个用于网站技术分析的 Chrome 插件</p><p></p>
-<p></p><p><a href="https://learn-anything.xyz/learn-anything" target="_blank" rel="external"><strong>Learn anything&#8202;</strong></a>—&#8202;一个强大的用于分析某个主题的思维导图</p><p></p>
-<p><hr></p>
-<p></p><p>这是我个人有时在使用的一些工具/框架/库的一个列表。很高兴在<a href="https://twitter.com/ognjengt" target="_blank" rel="external"><strong>twitter</strong></a> 上和我联系，并分享你的发现。</p><br><p></p>
+    <content type="html"><![CDATA[<h1 id="常用JS库"><a href="#常用JS库" class="headerlink" title="常用JS库"></a>常用JS库</h1><p><a href="http://vincentgarreau.com/particles.js/" target="_blank" rel="external"><strong>Particles.js </strong></a>— 一个用来在 web 中创建炫酷的浮动粒子的库</p>
+<p><a href="https://threejs.org/" target="_blank" rel="external"><strong>Three.js</strong></a> — 一个用来在 web 中创建 3d 物体和 3d 空间的库</p>
+<p><a href="https://alvarotrigo.com/fullPage/#firstPage" target="_blank" rel="external"><strong>Fullpage.js</strong></a>— 快速实现全屏滚动特性</p>
+<p><a href="http://www.mattboldt.com/demos/typed-js/" target="_blank" rel="external"><strong>Typed.js</strong></a> — 打字机效果</p>
+<p><a href="http://imakewebthings.com/waypoints/" target="_blank" rel="external"><strong>Waypoints.js </strong></a>— 滚动到某个元素位置时触发一个功能</p>
+<p><a href="https://highlightjs.org/" target="_blank" rel="external"><strong>Highlight.js</strong> </a>— web 语法高亮</p>
+<p><a href="http://www.chartjs.org/" target="_blank" rel="external"><strong>Chart.js</strong></a> — 使用 JavaScript 创建漂亮的图表</p>
+<p><a href="http://instantclick.io/" target="_blank" rel="external"><strong>Instantclick</strong></a> — 能够明显加速网站加载时间，鼠标 hover 时预加载资源</p>
+<p><a href="http://gionkunz.github.io/chartist-js/index.html" target="_blank" rel="external"><strong>Chartist</strong></a> — 另一个图表库</p>
+<p><a href="http://darsa.in/motio/#!introduction" target="_blank" rel="external"><strong>Motio </strong></a>— 一个基于动画和平移的雪碧图库</p>
+<p><a href="http://git.blivesta.com/animsition/" target="_blank" rel="external"><strong>Animsition</strong></a> — CSS 实现动画过渡的 jQuery 插件</p>
+<p><a href="https://github.com/luruke/barba.js" target="_blank" rel="external"><strong>Barba.js</strong></a> — 流式页面过渡</p>
+<p><a href="http://zurb.com/playground/twentytwenty" target="_blank" rel="external"><strong>TwentyTwenty </strong></a>— 一个对比图片的可视化 diff 工具</p>
+<p><a href="https://github.com/maxwellito/vivus#vivusjs" target="_blank" rel="external"><strong>Vivus.js</strong></a> — 在 SVG 上绘制动画</p>
+<p><a href="http://mynameismatthieu.com/WOW/" target="_blank" rel="external"><strong>Wow.js</strong> </a>— 滚动时展现动画</p>
+<p><a href="https://github.com/anthonyly/Scrolline.js" target="_blank" rel="external"><strong>Scrolline.js</strong></a> — 页面滚动时显示滚动进度</p>
+<p><a href="http://velocityjs.org/" target="_blank" rel="external"><strong>Velocity.js</strong></a> — 快速流畅的 JavaScript 动画</p>
+<p><a href="http://michalsnik.github.io/aos/" target="_blank" rel="external"><strong>Animate on scroll</strong></a> — 漂亮的页面滚动元素动画</p>
+<p><a href="http://handlebarsjs.com/" target="_blank" rel="external"><strong>Handlebars.js</strong></a> — Javascript 模板</p>
+<p><a href="http://www.pixxelfactory.net/jInvertScroll/" target="_blank" rel="external"><strong>jInvertScroll</strong></a> — 视差滚动</p>
+<p><a href="https://github.com/peachananr/onepage-scroll" target="_blank" rel="external"><strong>One page scroll</strong></a> — 又一个页面滚动库</p>
+<p><a href="https://github.com/wagerfield/parallax" target="_blank" rel="external"><strong>Parallax.js</strong></a> — 对智能设备方向变化做出响应的视差引擎</p>
+<p><a href="http://twitter.github.io/typeahead.js/" target="_blank" rel="external"><strong>Typeahead.js </strong></a>— 搜索补全</p>
+<p><a href="http://skidding.github.io/dragdealer/" target="_blank" rel="external"><strong>Dragdealer.js</strong></a> — 炫酷拖拽</p>
+<p><a href="http://bouncejs.com/" target="_blank" rel="external"><strong>Bounce.js </strong></a>— 创建炫酷的 CSS3 动画</p>
+<p><a href="https://github.com/alvarotrigo/pagePiling.js" target="_blank" rel="external"><strong>Pagepiling.js</strong></a> — 全屏滚动</p>
+<p><a href="https://github.com/alvarotrigo/multiscroll.js" target="_blank" rel="external"><strong>Multiscroll.js </strong></a>— 两列垂直反向滚动</p>
+<p><a href="http://lab.ejci.net/favico.js/" target="_blank" rel="external"><strong>Favico.js</strong></a> — 动态 favicon</p>
+<p><a href="http://aerolab.github.io/midnight.js/" target="_blank" rel="external"><strong>Midnight.js </strong></a>— 固定头部切换效果</p>
+<p><a href="http://animejs.com/" target="_blank" rel="external"><strong>Anime.js </strong></a>— 动画库</p>
+<p><a href="http://keycode.info/" target="_blank" rel="external"><strong>Keycode</strong></a> — 获取键盘按键的 JavaScript keycode</p>
+<p><a href="http://rubaxa.github.io/Sortable/" target="_blank" rel="external"><strong>Sortable</strong></a> — 拖拽插件</p>
+<p><a href="http://projects.sergiodinislopes.pt/flexdatalist/" target="_blank" rel="external"><strong>Flexdatalist </strong></a>— 自动补全</p>
+<p><a href="https://slideout.js.org/" target="_blank" rel="external"><strong>Slideout.js </strong></a>— 移动应用侧滑导航</p>
+<p><a href="http://jquerymy.com/#/" target="_blank" rel="external"><strong>Jquerymy</strong></a> — 使用 jQuery 实现双向数据绑定</p>
+<p><a href="http://nosir.github.io/cleave.js/" target="_blank" rel="external"><strong>Cleave.js </strong></a>— 实时格式化输入内容</p>
+<p><a href="http://smalljs.org/client-side-routing/page/" target="_blank" rel="external"><strong>Page</strong></a> — 客户端单页应用路由</p>
+<p><a href="http://selectize.github.io/selectize.js/" target="_blank" rel="external"><strong>Selectize.js</strong></a> — 用来添加 tag 的 Hybrid 选择框</p>
+<p><a href="http://hernansartorio.com/jquery-nice-select/" target="_blank" rel="external"><strong>Nice select </strong></a>— 创建漂亮的选择框的 jQuery 库</p>
+<p><a href="http://tether.io/" target="_blank" rel="external"><strong>Tether</strong></a> — 使用固定定位来创建相关元素</p>
+<p><a href="https://github.com/HubSpot/shepherd" target="_blank" rel="external"><strong>Shepherd.js </strong></a>— 为应用创建新手引导</p>
+<p><a href="https://github.com/HubSpot/tooltip" target="_blank" rel="external"><strong>Tooltip</strong></a> — tooltip 提示框</p>
+<p><a href="https://select2.github.io/" target="_blank" rel="external"><strong>Select2</strong></a> — Jquery 选择框插件</p>
+<p><a href="http://izitoast.marcelodolce.com/" target="_blank" rel="external"><strong>IziToast</strong></a> — 通知弹窗实现</p>
+<p><a href="http://izimodal.marcelodolce.com/" target="_blank" rel="external"><strong>IziModal </strong></a>— 模态框实现</p>
+<h3 id="CSS-库-设计相关"><a href="#CSS-库-设计相关" class="headerlink" title="CSS 库 / 设计相关"></a>CSS 库 / 设计相关</h3><p><a href="https://daneden.github.io/animate.css/" target="_blank" rel="external"><strong>Animate.css</strong></a> — 动画库</p>
+<p><a href="https://flatuicolors.com/" target="_blank" rel="external"><strong>Flat UI Colors </strong></a>— 扁平化设计配色</p>
+<p><a href="https://getmdl.io/index.html" target="_blank" rel="external"><strong>Material design lite</strong></a>— 基于 Google material design 的框架</p>
+<p><a href="https://www.webpagefx.com/web-design/random-color-picker/" target="_blank" rel="external"><strong>Colorrrs </strong></a>— 随机颜色生成器</p>
+<p><a href="https://tympanus.net/Development/SectionSeparators/" target="_blank" rel="external"><strong>Section separators</strong></a> — CSS 实现区域分割</p>
+<p><a href="http://topcoat.io/" target="_blank" rel="external"><strong>Topcoat</strong></a> — 框架</p>
+<p><a href="https://www.kirupa.com/html5/ken_burns_effect_css.htm" target="_blank" rel="external"><strong>Create ken burns effect </strong></a>— 使用 CSS3 动画实现 Ken burns 特效</p>
+<p><a href="http://www.vittoriozaccaria.net/dyn-css/" target="_blank" rel="external"><strong>DynCSS</strong></a> — 给 CSS 添加 function，动态化 CSS</p>
+<p><a href="https://www.minimamente.com/example/magic_animations/" target="_blank" rel="external"><strong>Magic animations</strong></a> — CSS3 实现动画特效</p>
+<p><a href="https://webkul.github.io/csspin/" target="_blank" rel="external"><strong>CSSpin</strong></a> — css spinners 合集</p>
+<p><a href="https://feathericons.com/" target="_blank" rel="external"><strong>Feather icons</strong></a> — Icon 集合</p>
+<p><a href="http://ionicons.com/" target="_blank" rel="external"><strong>Ion icons</strong></a> — Icon 集合</p>
+<p><a href="http://fontawesome.io/" target="_blank" rel="external"><strong>Font awesome</strong></a> — Icon 集合</p>
+<p><a href="http://brandmark.io/font-generator/" target="_blank" rel="external"><strong>Font generator</strong></a> — 组合多个字体创建混合字体</p>
+<p><a href="https://proto.io/freebies/onoff/" target="_blank" rel="external"><strong>On/Off switch</strong></a> — 使用 CSS 创建 on/off 开关、radio 按钮</p>
+<p><a href="https://getuikit.com/" target="_blank" rel="external"><strong>UI Kit</strong></a> — 框架</p>
+<p><a href="http://getbootstrap.com/" target="_blank" rel="external"><strong>Bootstrap</strong></a> — 框架</p>
+<p><a href="http://foundation.zurb.com/" target="_blank" rel="external"><strong>Foundation </strong></a>— 框架</p>
+<h3 id="有用的产品-链接"><a href="#有用的产品-链接" class="headerlink" title="有用的产品/链接"></a>有用的产品/链接</h3><p><a href="https://github.com/joshbuchea/HEAD" target="_blank" rel="external"><strong>cheatsheet</strong></a> — 可以写在<head>中的所有标签</head></p>
+<p><a href="https://ghost.org/" target="_blank" rel="external"><strong>Ghost </strong></a>— 基于 Node.js 的博客平台</p>
+<p><a href="https://www.whatruns.com/" target="_blank" rel="external"><strong>What runs</strong></a> — 一个用于网站技术分析的 Chrome 插件</p>
+<p><a href="https://learn-anything.xyz/learn-anything" target="_blank" rel="external"><strong>Learn anything </strong></a>— 一个强大的用于分析某个主题的思维导图</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;常用JS库&quot;&gt;&lt;a href=&quot;#常用JS库&quot; class=&quot;headerlink&quot; title=&quot;常用JS库&quot;&gt;&lt;/a&gt;常用JS库&lt;/h1&gt;&lt;blockquote&gt;
-&lt;div id=&quot;article-text&quot;&gt;
-
-
-
-
-&lt;/div&gt;&lt;/blockquote&gt;
-
+      &lt;h1 id=&quot;常用JS库&quot;&gt;&lt;a href=&quot;#常用JS库&quot; class=&quot;headerlink&quot; title=&quot;常用JS库&quot;&gt;&lt;/a&gt;常用JS库&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://vincentgarreau.com/particles.js/&quot; target=&quot;
     
     </summary>
     
