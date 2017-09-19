@@ -3,8 +3,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/09/19/js-module-1-md/</loc>
+    <lastmod>2017-09-19T03:52:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>js-module-1.md</title>
+        <pubTime>2017-09-19T03:50:04.000Z</pubTime>
+        
+        <tag>js </tag>
+         
+         
+           
+             
+              <breadCrumb title="js" url="http://yoursite.com/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/09/11/linux-base-1-md/</loc>
-    <lastmod>2017-09-11T09:19:13.000Z</lastmod>
+    <lastmod>2017-09-11T09:21:22.000Z</lastmod>
     <data>
         <display>
         <title>shell状态</title>
