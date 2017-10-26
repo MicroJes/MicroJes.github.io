@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-19T03:58:36.000Z</updated>
+  <updated>2017-10-16T03:57:57.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片图册画廊</title>
+    <link href="http://yoursite.com/2017/10/16/js-photo-md/"/>
+    <id>http://yoursite.com/2017/10/16/js-photo-md/</id>
+    <published>2017-10-16T03:49:53.000Z</published>
+    <updated>2017-10-16T03:57:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="图册-画廊"><a href="#图册-画廊" class="headerlink" title="图册 画廊"></a>图册 画廊</h2><ul>
+<li>随着用户交互丰富<h3 id="工业化库"><a href="#工业化库" class="headerlink" title="工业化库"></a>工业化库</h3></li>
+</ul>
+<ul>
+<li><a href="http://photoswipe.com/" target="_blank" rel="external">PhotoSwipe</a></li>
+<li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank" rel="external">magnific popup</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;图册-画廊&quot;&gt;&lt;a href=&quot;#图册-画廊&quot; class=&quot;headerlink&quot; title=&quot;图册 画廊&quot;&gt;&lt;/a&gt;图册 画廊&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;随着用户交互丰富&lt;h3 id=&quot;工业化库&quot;&gt;&lt;a href=&quot;#工业化库&quot; class=&quot;headerl
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="photo gallery preview" scheme="http://yoursite.com/tags/photo-gallery-preview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>home-basic-1.md</title>
+    <link href="http://yoursite.com/2017/09/20/home-basic-1-md/"/>
+    <id>http://yoursite.com/2017/09/20/home-basic-1-md/</id>
+    <published>2017-09-19T22:54:05.000Z</published>
+    <updated>2017-09-19T22:54:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="this-is-the-first-time-on-the-train"><a href="#this-is-the-first-time-on-the-train" class="headerlink" title="this is the first time on the train"></a>this is the first time on the train</h1><blockquote>
+<p>wherever u go </p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;this-is-the-first-time-on-the-train&quot;&gt;&lt;a href=&quot;#this-is-the-first-time-on-the-train&quot; class=&quot;headerlink&quot; title=&quot;this is the first time
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>js-module-1.md</title>
@@ -151,12 +202,13 @@
     <link href="http://yoursite.com/2017/08/29/git-base-1/"/>
     <id>http://yoursite.com/2017/08/29/git-base-1/</id>
     <published>2017-08-29T10:23:33.000Z</published>
-    <updated>2017-09-06T06:20:39.000Z</updated>
+    <updated>2017-10-26T04:27:59.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="git-start"><a href="#git-start" class="headerlink" title="git start"></a>git start</h2><ul>
 <li>git repository config</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add origin https:<span class="comment">//xxx.xxx.xxx || git@git.xx.xxx</span></div><div class="line">git config user.name  xxx</div><div class="line">git config user.email xxx</div></pre></td></tr></table></figure>
+<h2 id="git-分支使用技巧"><a href="#git-分支使用技巧" class="headerlink" title="git 分支使用技巧"></a>git 分支使用技巧</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git branch -t  demo origin/demo     //创建demo分支 并且追踪远程demo分支</div><div class="line">git branch --track  demo origin/demo</div><div class="line"></div><div class="line">$ git:(demo)  git branch -u origin/master //修改demo远程追踪为master</div><div class="line">$ git:(demo)  git branch --set-upstream demo origin/master  //不推荐</div></pre></td></tr></table></figure>
 <h2 id="start-description"><a href="#start-description" class="headerlink" title="start description"></a>start description</h2><ul>
 <li>git config 说明<ul>
 <li>remote add origin xxx 给本地仓库添加远程仓库 别名 origin</li>
@@ -191,7 +243,7 @@
     <link href="http://yoursite.com/2017/08/28/js-base/"/>
     <id>http://yoursite.com/2017/08/28/js-base/</id>
     <published>2017-08-28T06:27:33.000Z</published>
-    <updated>2017-08-29T10:43:55.000Z</updated>
+    <updated>2017-10-17T07:17:26.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="js对象"><a href="#js对象" class="headerlink" title="js对象"></a>js对象</h1><h3 id="this-对象"><a href="#this-对象" class="headerlink" title="this 对象"></a>this 对象</h3><blockquote>
 <p>this 指向和调用方式有关 函数调用  对象方法   new表达式</p>
@@ -251,6 +303,7 @@
 <li>emumerable </li>
 <li>writable        true 可读写， flase  只读</li>
 <li>value           属性的值</li>
+<li>访问器属性getter setter 使用 writable value  </li>
 </ul>
 <hr>
 ]]></content>
@@ -265,6 +318,54 @@
     
     
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gulp常用插件</title>
+    <link href="http://yoursite.com/2017/08/28/gulp-plugins/"/>
+    <id>http://yoursite.com/2017/08/28/gulp-plugins/</id>
+    <published>2017-08-28T05:27:33.000Z</published>
+    <updated>2017-08-28T10:28:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="gulp-load-plugins"><a href="#gulp-load-plugins" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>将所有gulp开头的文件load，</p>
+</blockquote>
+<h5 id="require-“gulp-load-plugins”"><a href="#require-“gulp-load-plugins”" class="headerlink" title="$=require(“gulp-load-plugins”),"></a>$=require(“gulp-load-plugins”),</h5><blockquote>
+<p>通过$访问gulp相关的插件。</p>
+</blockquote>
+<h5 id="gulp-load-plugins-1"><a href="#gulp-load-plugins-1" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
+<p>这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。</p>
+</blockquote>
+<h5 id="gulp-jade"><a href="#gulp-jade" class="headerlink" title="gulp-jade"></a>gulp-jade</h5><blockquote>
+<p>编辑jade</p>
+</blockquote>
+<h5 id="gulp-less"><a href="#gulp-less" class="headerlink" title="gulp-less"></a>gulp-less</h5><blockquote>
+<p> 编辑less 文件</p>
+</blockquote>
+<h5 id="gulp-flatten"><a href="#gulp-flatten" class="headerlink" title="gulp-flatten"></a>gulp-flatten</h5><blockquote>
+<p>平面任意嵌套的数组，化成非数组项的非嵌套列表</p>
+</blockquote>
+<h5 id="gulp-plumber"><a href="#gulp-plumber" class="headerlink" title="gulp-plumber"></a>gulp-plumber</h5><blockquote>
+<p>Prevent pipe breaking caused by errors from gulp plugins</p>
+</blockquote>
+<h5 id="gulp-uglify"><a href="#gulp-uglify" class="headerlink" title="gulp-uglify"></a>gulp-uglify</h5><blockquote>
+<p>插件用来压缩js文件。</p>
+</blockquote>
+<h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
+<p>插件用来压缩css文件。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;gulp-load-plugins&quot;&gt;&lt;a href=&quot;#gulp-load-plugins&quot; class=&quot;headerlink&quot; title=&quot;gulp-load-plugins&quot;&gt;&lt;/a&gt;gulp-load-plugins&lt;/h5&gt;&lt;blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
     
   </entry>
   
@@ -333,54 +434,6 @@
     
     
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gulp常用插件</title>
-    <link href="http://yoursite.com/2017/08/28/gulp-plugins/"/>
-    <id>http://yoursite.com/2017/08/28/gulp-plugins/</id>
-    <published>2017-08-28T05:27:33.000Z</published>
-    <updated>2017-08-28T10:28:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="gulp-load-plugins"><a href="#gulp-load-plugins" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
-<p>将所有gulp开头的文件load，</p>
-</blockquote>
-<h5 id="require-“gulp-load-plugins”"><a href="#require-“gulp-load-plugins”" class="headerlink" title="$=require(“gulp-load-plugins”),"></a>$=require(“gulp-load-plugins”),</h5><blockquote>
-<p>通过$访问gulp相关的插件。</p>
-</blockquote>
-<h5 id="gulp-load-plugins-1"><a href="#gulp-load-plugins-1" class="headerlink" title="gulp-load-plugins"></a>gulp-load-plugins</h5><blockquote>
-<p>这个插件能自动帮你加载package.json文件里的gulp插件。例如假设你的package.json文件里的依赖是这样的:也就是原始插件名去掉gulp-前缀，之后再转换为驼峰命名。</p>
-</blockquote>
-<h5 id="gulp-jade"><a href="#gulp-jade" class="headerlink" title="gulp-jade"></a>gulp-jade</h5><blockquote>
-<p>编辑jade</p>
-</blockquote>
-<h5 id="gulp-less"><a href="#gulp-less" class="headerlink" title="gulp-less"></a>gulp-less</h5><blockquote>
-<p> 编辑less 文件</p>
-</blockquote>
-<h5 id="gulp-flatten"><a href="#gulp-flatten" class="headerlink" title="gulp-flatten"></a>gulp-flatten</h5><blockquote>
-<p>平面任意嵌套的数组，化成非数组项的非嵌套列表</p>
-</blockquote>
-<h5 id="gulp-plumber"><a href="#gulp-plumber" class="headerlink" title="gulp-plumber"></a>gulp-plumber</h5><blockquote>
-<p>Prevent pipe breaking caused by errors from gulp plugins</p>
-</blockquote>
-<h5 id="gulp-uglify"><a href="#gulp-uglify" class="headerlink" title="gulp-uglify"></a>gulp-uglify</h5><blockquote>
-<p>插件用来压缩js文件。</p>
-</blockquote>
-<h5 id="gulp-minify-css"><a href="#gulp-minify-css" class="headerlink" title="gulp-minify-css"></a>gulp-minify-css</h5><blockquote>
-<p>插件用来压缩css文件。</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;gulp-load-plugins&quot;&gt;&lt;a href=&quot;#gulp-load-plugins&quot; class=&quot;headerlink&quot; title=&quot;gulp-load-plugins&quot;&gt;&lt;/a&gt;gulp-load-plugins&lt;/h5&gt;&lt;blockquote&gt;
-
-    
-    </summary>
-    
-    
-      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
     
   </entry>
   
